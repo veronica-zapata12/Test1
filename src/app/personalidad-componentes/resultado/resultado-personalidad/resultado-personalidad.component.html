@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<app-header></app-header>
+<h4 class="centrar">Resultados del Test de personalidad</h4>
+
+<div class="container">
+    <a href="/inicio">&laquo; volver al inicio</a><br>
+    <table *ngIf="clasificacionPE.length" class="table table-striped" border="2">
+        <thead>
+            <tr>
+                <th>Escalas primarias</th>
+                <th>DE</th>
+                <th>Descripcion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>A: Afabilidad</th>
+                <td>{{clasificacionPE[0]}}</td>
+                <td>{{descripciondelPE[0]}}</td>
+            </tr>
+            <tr>
+                <th>B: Razonamiento</th>
+                <td>{{clasificacionPE[1]}}</td>
+                <td>{{descripciondelPE[1]}}</td>
+            </tr>
+            <tr>
+                <th>C: Estabilidad</th>
+                <td>{{clasificacionPE[2]}}</td>
+                <td>{{descripciondelPE[2]}}</td>
+            </tr>
+            <tr>
+                <th>E: Dominancia</th>
+                <td>{{clasificacionPE[3]}}</td>
+                <td>{{descripciondelPE[3]}}</td>
+            </tr>
+            <tr>
+                <th>F: Animación</th>
+                <td>{{clasificacionPE[4]}}</td>
+                <td>{{descripciondelPE[4]}}</td>
+            </tr>
+            <tr>
+                <th>G: Atención-normas</th>
+                <td>{{clasificacionPE[5]}}</td>
+                <td>{{descripciondelPE[5]}}</td>
+            </tr>
+            <tr>
+                <th>H: atrevimiento</th>
+                <td>{{clasificacionPE[6]}}</td>
+                <td>{{descripciondelPE[6]}}</td>
+            </tr>
+            <tr>
+                <th>I: Sensibilidad</th>
+                <td>{{clasificacionPE[7]}}</td>
+                <td>{{descripciondelPE[7]}}</td>
+            </tr>
+            <tr>
+                <th>L: Vigilancia</th>
+                <td>{{clasificacionPE[8]}}</td>
+                <td>{{descripciondelPE[8]}}</td>
+            </tr>
+            <tr>
+                <th>M: Abstracción</th>
+                <td>{{clasificacionPE[9]}}</td>
+                <td>{{descripciondelPE[9]}}</td>
+            </tr>
+            <tr>
+                <th>N: Privacidad</th>
+                <td>{{clasificacionPE[10]}}</td>
+                <td>{{descripciondelPE[10]}}</td>
+            </tr>
+            <tr>
+                <th>O: Aprensión</th>
+                <td>{{clasificacionPE[11]}}</td>
+                <td>{{descripciondelPE[11]}}</td>
+            </tr>
+            <tr>
+                <th>Q1: Apertura-cambio</th>
+                <td>{{clasificacionPE[12]}}</td>
+                <td>{{descripciondelPE[12]}}</td>
+            </tr>
+            <tr>
+                <th>Q2: Autosuficiencia</th>
+                <td>{{clasificacionPE[13]}}</td>
+                <td>{{descripciondelPE[13]}}</td>
+            </tr>
+            <tr>
+                <th>Q3: Perfeccionismo</th>
+                <td>{{clasificacionPE[14]}}</td>
+                <td>{{descripciondelPE[14]}}</td>
+            </tr>
+            <tr>
+                <th>Q4: Estabilidad</th>
+                <td>{{clasificacionPE[15]}}</td>
+                <td>{{descripciondelPE[15]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</html>

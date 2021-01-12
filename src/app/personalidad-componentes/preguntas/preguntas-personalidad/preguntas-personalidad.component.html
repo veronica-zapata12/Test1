@@ -1,0 +1,149 @@
+<app-header></app-header>
+<div class="container">
+  <section class="ventana-emergente">
+    <ng-template #content let-c="close" let-d="dismiss" class="template">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title"><strong>¡¡INSTRUCCIONES!!</strong></h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <p>A continuación encontrará, una serie de frases que permitirán conocer sus actitudes e intereses. En
+            general, no existen contestaciones correctas o incorrectas, por que las personas tienen distintos intereses
+            y ven
+            las cosas desde distintos puntos de vista. Conteste con sinceridad; de esta forma se podrá conocer mejor su
+            forma de ser. <br>
+            Cada frase contiene tres posibles respuestas (A, B y C) y
+            normalmente la alternativa B viene con un interrogante, para ser señalada cuando no es posible decidirse
+            entre la A ó la C. Las frases están ordenadas
+            numéricamente; siga esta numeración al contestar. Lea atentamente cada frase y las posibles respuestas; así
+            le será más fácil decidirse. <br>
+            Ahora lea los ejemplos que se presentan a continuación y piense en como los contestaría. A modo de
+            práctica, marque en la sección “Ejemplos de Prueba” de la Hoja de Respuestas, sus preferencias. Si tiene
+            dudas pregunte al examinador. <br>
+            <strong>
+              Ejemplos:<br>
+              1. Me gusta presenciar una competición deportiva.<br>
+              <div>
+                <input id="1" type="radio" value="1" name="ejemplo1">
+                <label for="1">A. Verdadero.</label>
+              </div>
+              <div>
+                <input id="2" type="radio" value="2" name="ejemplo1">
+                <label for="2">B. ?</label>
+              </div>
+              <div>
+                <input id="3" type="radio" value="3" name="ejemplo1">
+                <label for="3">C. Falso.</label>
+              </div>
+              2. Prefiero las personas.<br>
+              <div>
+                <input id="1" type="radio" value="1" name="ejemplo2">
+                <label for="1">A. Reservadas.</label>
+              </div>
+              <div>
+                <input id="2" type="radio" value="2" name="ejemplo2">
+                <label for="2">B. ?</label>
+              </div>
+              <div>
+                <input id="3" type="radio" value="3" name="ejemplo2">
+                <label for="3">C. Que hacen amigos fácilmente.</label>
+              </div>
+              3. El dinero no hace la felicidad.<br>
+              <div>
+                <input id="1" type="radio" value="1" name="ejemplo3">
+                <label for="1">A. Verdadero.</label>
+              </div>
+              <div>
+                <input id="2" type="radio" value="2" name="ejemplo3">
+                <label for="2">B. ?</label>
+              </div>
+              <div>
+                <input id="3" type="radio" value="3" name="ejemplo3">
+                <label for="3">C. Falso.</label>
+              </div>
+            </strong>
+            Al contestar tenga en cuenta lo siguiente:<br>
+            • No piense demasiado el contenido de las frases, ni emplee mucho tiempo en decidirse. Las frases son
+            muy cortas para darle todos los detalles que Ud. Quisiera: por ejemplo, se ha puesto: “...presenciar una
+            competición deportiva...” , y tal vez a Ud. le guste más el fútbol, que el tenis; debe contestar pensando
+            en lo que es habitual para Ud. Generalmente, se contestan cinco o seis frases por minuto y se tarda
+            poco más de media hora para completar todo el test.<br>
+            • Evite señalar la respuesta B (?) Excepto cuando le sea imposible decidirse por las otras dos; lo corriente
+            es que esto le ocurra solo en muy pocas frases.<br>
+            • Procure no dejar ninguna pregunta sin contestar. Es posible que alguna no tenga nada que ver con Ud.
+            (por que no se aplica perfectamente a su caso); intente elegir la respuesta que vaya mejor con su
+            modo de ser. Tal vez algunas frases le parezcan muy personales; no se preocupe y recuerde que las
+            Hojas de Respuestas se guardan como documentos confidenciales y no pueden ser valoradas sin una
+            planilla especial; por otra parte, al obtener los resultados no se consideran las respuestas una a una,
+            sino globalmente.<br>
+            • Conteste sinceramente. No señale sus respuestas pensando en lo que “es bueno” o lo que “interesa”
+            para impresionar al examinador. </p>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Aceptar</button>
+      </div>
+    </ng-template>
+  </section>
+  <section>
+    <div>
+      <h2> Test De Personalidad</h2>
+      <div class="respuestas-info">
+        <P><STRONg>RECUERDE QUE DEBE RESPONDER TODAS LAS PREGUNTAS EN ORDEN POR QUE ESTO PUEDE AFECTAR LOS RESULTADOS
+            DEL TEST.
+            <br>
+            Al contestar tenga en cuenta lo siguiente:<br></STRONg>
+          • No piense demasiado el contenido de las frases, ni emplee mucho tiempo en decidirse. Las frases son
+          muy cortas para darle todos los detalles que Ud. Quisiera: por ejemplo, se ha puesto: “...presenciar una
+          competición deportiva...” , y tal vez a Ud. le guste más el fútbol, que el tenis; debe contestar pensando
+          en lo que es habitual para Ud. Generalmente, se contestan cinco o seis frases por minuto y se tarda
+          poco más de media hora para completar todo el test.<br>
+          • Evite señalar la respuesta B (?) Excepto cuando le sea imposible decidirse por las otras dos; lo corriente
+          es que esto le ocurra solo en muy pocas frases.<br>
+          • Procure no dejar ninguna pregunta sin contestar. Es posible que alguna no tenga nada que ver con Ud.
+          (por que no se aplica perfectamente a su caso); intente elegir la respuesta que vaya mejor con su
+          modo de ser. Tal vez algunas frases le parezcan muy personales; no se preocupe y recuerde que las
+          Hojas de Respuestas se guardan como documentos confidenciales y no pueden ser valoradas sin una
+          planilla especial; por otra parte, al obtener los resultados no se consideran las respuestas una a una,
+          sino globalmente.<br>
+          • Conteste sinceramente. No señale sus respuestas pensando en lo que “es bueno” o lo que “interesa”
+          para impresionar al examinador.
+
+        </P>
+      </div>
+      <div class="pregunta"
+        *ngFor="let pregunta of preguntas | paginate:{itemsPerPage:20, currentPage:paginaActual}; let preguntaindex = index ">
+        <span for=preguntas> <strong>{{pregunta.orden}}. {{pregunta.descripcion}}</strong></span>
+
+        <div>
+          <br>
+          <mat-button-toggle-group #res="matButtonToggleGroup"
+            *ngFor="let item of pregunta.respuestas; let indice = index">
+            <mat-button-toggle class="chip"
+              [ngClass]="esRespuestaSeleccionado(indice + 1, pregunta.orden) ? 'chip-hito-select' : 'chip'"
+              (click)="agregar(indice + 1, pregunta.orden)">
+              {{indice+1}} {{item}}
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+
+      </div>
+      <div class="respuestas-info">
+        <P><STRONg>RECUERDE QUE DEBE RESPONDER TODAS LAS PREGUNTAS EN ORDEN POR QUE ESTO PUEDE AFECTAR LOS RESULTADOS
+            DEL TEST</STRONg></P>
+      </div>
+      <div class="col text-center">
+         <button *ngIf="respuestas.length === 185" class="btn btns-primary" type="submit" (click)="enviar()">Enviar</button>
+      </div>
+     
+      <pagination-controls (pageChange)="paginaActual = $event" previousLabel="Anterior" nextLabel="Siguiente"
+        (click)="iniciar()"></pagination-controls>
+      
+
+    </div>
+  </section>
+</div>

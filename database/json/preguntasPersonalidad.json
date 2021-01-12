@@ -1,0 +1,1694 @@
+[{
+    "orden": 1,
+    "descripcion": "En un negocio sería más importante encargarse de:",
+    "respuestas": [
+        "A: Las máquinas o llevar registros",
+        "B: ? ",
+        "C: Entrevistar y hablar con personas"
+    ]
+    }, {
+    "orden": 2,
+    "descripcion": "Normalmente me voy a dormir sintiéndome satisfecho de cómo ha ido el día",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}, {
+    "orden": 3,
+    "descripcion": "Si observo que la línea de razonamiento de otra persona es incorrecta, normalmente:",
+    "respuestas": [
+        "A: Se lo señalo",
+        "B: ? ",
+        "C: Lo paso por alto"
+    ]
+}, {
+    "orden": 4,
+    "descripcion": "Me gusta muchísimo tener invitados y hacer que lo pasen bien",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 5,
+    "descripcion": "Cuando tomo una decisión siempre pienso cuidadosamente en lo que es correcto y justo",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}, {
+    "orden": 6,
+    "descripcion": "Me atrae más pasar una tarde ocupado en una tarea tranquila a la que tenga afición que estar en una reunión animada",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}, {
+    "orden": 7,
+    "descripcion": "Admiro más a: ",
+    "respuestas": [
+        "A: Una persona con capacidad de tipo medio, pero con una moral estricta",
+        "B: ? ",
+        "C: Una persona con talento, aunque a veces no sea responsable."
+    ]
+}, {
+    "orden": 8,
+    "descripcion": "Sería más interesante ser:",
+    "respuestas": [
+        "A: Ingeniero de la construcción.",
+        "B: ? ",
+        "C: Escritor de teatro."
+    ]
+},
+{
+    "orden": 9,
+    "descripcion": "Normalmente soy el que da el primer paso al hacer amigos",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 10,
+    "descripcion": "Me encantan las buenas novelas u obras de teatro / cine",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 11,
+    "descripcion": "Cuando la gente autoritaria trata de dominarte hago justamente lo contrario de lo que quiere",
+    "respuestas": [
+        "A: Si",
+        "B: ? ",
+        "C: No"
+    ]
+},
+
+{
+    "orden": 12,
+    "descripcion": "Algunas veces no congenio muy bien con los demás porque mis ideas no son convencionales y corrientes",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 13,
+    "descripcion": "Muchas personas te “apuñalarían por la espalda” para salir ellas adelante",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 14,
+    "descripcion": "Me meto en problemas porque a veces sigo adelante con mis ideas sin comentarlas con las personas que puedan estar implicadas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 15,
+    "descripcion": "Hablo de mis sentimientos:",
+    "respuestas": [
+        "A: Con facilidad cuando las personas parecen estar interesadas.",
+        "B: ? ",
+        "C: Solo si no tengo más remedio."
+    ]
+},
+{
+    "orden": 16,
+    "descripcion": "Me aprovecho de la gente.",
+    "respuestas": [
+        "A: Algunas veces",
+        "B: ? ",
+        "C: Nunca"
+    ]
+},
+{
+    "orden": 17,
+    "descripcion": "Mis pensamientos son demasiado complicados y profundos para ser comprendidos por muchas personas",
+    "respuestas": [
+        "A: Casi nunca",
+        "B: ? ",
+        "C: A menudo"
+    ]
+},
+{
+    "orden": 18,
+    "descripcion": "Prefiero",
+    "respuestas": [
+        "A: Comentar mis problemas con los amigos",
+        "B: ? ",
+        "C: .Guardarlos para mis adentros"
+    ]
+},
+{
+    "orden": 19,
+    "descripcion": "Pienso a cerca de cosas que debería haber dicho, pero que no las dije ",
+    "respuestas": [
+        "A: Casi nunca",
+        "B: ? ",
+        "C: A menudo"
+    ]
+},
+{
+    "orden": 20,
+    "descripcion": "Siempre estoy alerta ante los intentos de propagandas en las cosas que leo",
+    "respuestas": [
+        "A: Si",
+        "B: ? ",
+        "C: No"
+    ]
+},
+{
+    "orden": 21,
+    "descripcion": "Si las personas actúan como si yo no les gustara:",
+    "respuestas": [
+        "A: No me perturba",
+        "B: ? ",
+        "C: Normalmente me hace daño"
+    ]
+},
+{
+    "orden": 22,
+    "descripcion": "Cuando observo que difiero de alguien en puntos de vista sociales, prefiero:",
+    "respuestas": [
+        "A: Discutir el significado de nuestras diferencias básicas",
+        "B: ? ",
+        "C: Cambiar el tema"
+    ]
+},
+{
+    "orden": 23,
+    "descripcion": "He dicho cosas que hirieron los sentimientos de otros",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 24,
+    "descripcion": "Si tuviera que cocinar o construir algo seguiría las instrucciones exactamente",
+    "respuestas": [
+        "A: Verdadero, para evitar problemas",
+        "B: ? ",
+        "C: Falso, porque podría hacer algo más interesante"
+    ]
+},
+{
+    "orden": 25,
+    "descripcion": "A la hora de construir o hacer algo preferiría trabajar:",
+    "respuestas": [
+        "A: Con otros",
+        "B: ? ",
+        "C: Yo solo"
+    ]
+},
+{
+    "orden": 26,
+    "descripcion": "Me gusta hacer planes con antelación para no perder tiempo en las tareas",
+    "respuestas": [
+        "A: Raras veces",
+        "B: ? ",
+        "C: A menudo"
+    ]
+},
+{
+    "orden": 27,
+    "descripcion": "Normalmente me gusta hacer mis planes yo solo, sin interrupciones y sugerencias de otros",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 28,
+    "descripcion": "Cuando me siento tenso incluso pequeñas cosas me sacan de quicio",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 29,
+    "descripcion": "Puedo encontrarme bastante a gusto en un ambiente desorganizado",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 30,
+    "descripcion": "Si mis planes, cuidadosamente elaborados, tuvieran que ser cambiados a causa de otras personas:",
+    "respuestas": [
+        "A: Eso me molestaría e irritaría",
+        "B: ? ",
+        "C: Me parecería bien y estaría contento de cambiarlos"
+    ]
+},
+{
+    "orden": 31,
+    "descripcion": "Preferiría",
+    "respuestas": [
+        "A: Estar en una oficina, organizando y atendiendo a personas",
+        "B: ? ",
+        "C: FaSer arquitecto dibujar planos en un despacho tranquilolso"
+    ]
+},
+{
+    "orden": 32,
+    "descripcion": "Cuando las pequeñas cosas comienzan a marchar mal unas detrás de otras:",
+    "respuestas": [
+        "A: Me siento como si no pudiera dormir",
+        "B: ? ",
+        "C: Continúo de un modo normal"
+    ]
+}
+,
+{
+    "orden": 33,
+    "descripcion": "Me satisface y entretiene cuidarme de las necesidades de los demás",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+
+{
+    "orden": 34,
+    "descripcion": "A veces hago observaciones tontas , a modo de broma, para sorprender a los demás",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 35,
+    "descripcion": "Cuando llega él momento de hacer algo que he planeado y esperado, a veces no me apetece ya continuarlo",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 36,
+    "descripcion": "En las situaciones que dependen de mí me siento bien dando instrucciones a los demás",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 37,
+    "descripcion": "Preferiría emplear una tarde:",
+    "respuestas": [
+        "A: Haciendo con tranquilidad y sosiego algo por lo que tenga afición",
+        "B: ? ",
+        "C: En una fiesta animada."
+    ]
+}
+,
+{
+    "orden": 38,
+    "descripcion": "Cuando yo sé muy bien lo que el grupo tiene que hacer, me gusta ser el único en dar las órdenes",
+    "respuestas": [
+        "A: Si",
+        "B: ? ",
+        "C: No"
+    ]
+}
+,
+{
+    "orden": 39,
+    "descripcion": "Me divierte mucho el humor rápido y vivaz de algunas series de televisión",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 40,
+    "descripcion": "Le doy más valor y respeto a las normas y buenas maneras, que a una vida fácil",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 41,
+    "descripcion": "Me encuentro tímido y retraído a la hora de hacer amigos entre personas desconocidas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 42,
+    "descripcion": "Si pudiera, preferiría hacer ejercicio con:",
+    "respuestas": [
+        "A: La esgrima o la danza",
+        "B: ? ",
+        "C: El tenis o la lucha libre"
+    ]
+}
+,
+{
+    "orden": 43,
+    "descripcion": "Normalmente hay una gran diferencia entre lo que la gente dice y lo que hace",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 44,
+    "descripcion": "Resultaría más interesante ser músico que mecánico.",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 45,
+    "descripcion": "Las personas forman su opinión acerca de mí demasiado rápidamente",
+    "respuestas": [
+        "A: Casi nunca",
+        "B: ? ",
+        "C: Amenudo"
+    ]
+}
+,
+{
+    "orden": 46,
+    "descripcion": "Soy de esas personas que:",
+    "respuestas": [
+        "A: Siempre están haciendo cosas prácticas que necesitan ser hechas",
+        "B: ? ",
+        "C: Imaginan o piensan acerca de cosas sobre sí mismas"
+    ]
+}
+,
+{
+    "orden": 47,
+    "descripcion": "Algunas personas creen que es difícil intimar conmigo",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 48,
+    "descripcion": "Puedo engañar a las personas siendo amigable cuando en realidad me desagradan",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 49,
+    "descripcion": "Mis pensamientos tienden más a girar sobre cosas realistas y prácticas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 50,
+    "descripcion": "Suelo ser reservado y guardar mis problemas para mis adentros",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 51,
+    "descripcion": "Después de tomar una decisión sobre algo sigo pensando si será acertada o errónea",
+    "respuestas": [
+        "A: Normalmente verdadero",
+        "B: ? ",
+        "C: Normalmente falso"
+    ]
+    }, {
+    "orden": 52,
+    "descripcion": "En el fondo no me gustan las personas que son “diferentes” u originales",
+    "respuestas": [
+        "A: Verdadero, normalmente no me gustan",
+        "B: ? ",
+        "C: Falso, normalmente las encuentro interesantes "
+    ]
+}, {
+    "orden": 53,
+    "descripcion": "Estoy más interesado en:",
+    "respuestas": [
+        "A: Buscar un significado personal a la vida",
+        "B: ? ",
+        "C: Asegurarme un trabajo con un buen sueldo"
+    ]
+}, {
+    "orden": 54,
+    "descripcion": "Me perturbo más que otros cuando las personas se enfadan entre ellas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 55,
+    "descripcion": "Lo que este mundo necesita es:",
+    "respuestas": [
+        "A: Más ciudadanos íntegros y constantes",
+        "B: ? ",
+        "C: Más reformadores con opiniones sobre cómo mejorar el mundo"
+    ]
+}, {
+    "orden": 56,
+    "descripcion": "Prefiero los juegos en lo que :",
+    "respuestas": [
+        "A: Se forman equipos o se tiene un compañero",
+        "B: ? ",
+        "C: Cada uno hace su partida"
+    ]
+}, {
+    "orden": 57,
+    "descripcion": "Normalmente dejo algunas cosas a la buena suerte, en vez de hacer planes complejos y con todo detalle ",
+    "respuestas": [
+        "A: Verdadero.",
+        "B: ? ",
+        "C: Falso"
+    ]
+}, {
+    "orden": 58,
+    "descripcion": "Frecuentemente tengo periodos de tiempo en que me es difícil abandonar el sentimiento de compadecerme a mí mismo",
+    "respuestas": [
+        "A: Verdadero.",
+        "B: ? ",
+        "C: Falso."
+    ]
+},
+{
+    "orden": 59,
+    "descripcion": "Mis mejores horas del día son aquellas que estoy solo con mis pensamientos y proyectos",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 60,
+    "descripcion": "Si la gente me interrumpe cuando estoy intentando hacer algo, eso no me perturba",
+    "respuestas": [
+        "A: Verdadero, no me siento mal",
+        "B: ? ",
+        "C: Falso, me molesta"
+    ]
+},
+{
+    "orden": 61,
+    "descripcion": "Siempre conservo mis pertenencias en perfectas condiciones",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+
+{
+    "orden": 62,
+    "descripcion": "A veces me siento frustrado por las personas demasiado rápidamente",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 63,
+    "descripcion": "No me siento a gusto cuando hablo o muestro mis sentimientos de afecto o cariño",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 64,
+    "descripcion": "En mi vida personal, casi siempre alcanzo las metas que me pongo",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 65,
+    "descripcion": "Si el sueldo fuera el mismo, preferiría ser un científico más que un directivo de ventas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 66,
+    "descripcion": "Si la gente hace algo incorrecto, normalmente le digo lo que pienso ",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 67,
+    "descripcion": "Pienso que mis necesidades emocionales:",
+    "respuestas": [
+        "A: No están demasiado satisfechas",
+        "B: ? ",
+        "C: Están bien satisfechas"
+    ]
+},
+{
+    "orden": 68,
+    "descripcion": "Normalmente me gusta estar en medio de mucha actividad y excitación ",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 69,
+    "descripcion": "La gente debería insistir, más de lo que hace ahora, en que las normas morales sean seguidas estrictamente ",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 70,
+    "descripcion": "Preferiría vestir:",
+    "respuestas": [
+        "A: De modo aseado y sencillo",
+        "B: ? ",
+        "C: A la moda y origina"
+    ]
+},
+{
+    "orden": 71,
+    "descripcion": "Me suelo sentir desconcertado si de pronto paso a ser el centro de la atención en un grupo social",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 72,
+    "descripcion": "Me pone irritado que la gente insista en que yo siga las mínimas reglas de seguridad",
+    "respuestas": [
+        "A: Verdadero, porque no siempre son necesarias",
+        "B: ? ",
+        "C: Falso, por que es importante hacer las cosas correctamente"
+    ]
+},
+{
+    "orden": 73,
+    "descripcion": "Comenzar a conversar con extraños:",
+    "respuestas": [
+        "A: Nunca me ha dado problemas",
+        "B: ? ",
+        "C: Me cuesta bastante"
+    ]
+},
+{
+    "orden": 74,
+    "descripcion": "Si trabajara en un periódico preferiría los temas de:",
+    "respuestas": [
+        "A: Literatura o cine",
+        "B: ? ",
+        "C: Deportes o política"
+    ]
+},
+{
+    "orden": 75,
+    "descripcion": "Dejo que pequeñas cosas me perturben más de lo que deberían",
+    "respuestas": [
+        "A: A veces",
+        "B: ? ",
+        "C: Raras veces"
+    ]
+},
+{
+    "orden": 76,
+    "descripcion": "Es acertado estar en guardia con los que hablan de modo amable, por que se pueden aprovechar de uno ",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 77,
+    "descripcion": "En la calle me detendría más a contemplar un artista pintando que a ver la construcción de un edificio ",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 78,
+    "descripcion": "Las personas se hacen perezosas en su trabajo cuando consiguen hacerlo con facilidad",
+    "respuestas": [
+        "A: Casi nunca",
+        "B: ? ",
+        "C: Amenudo"
+    ]
+},
+{
+    "orden": 79,
+    "descripcion": "Se me ocurren ideas nuevas sobre todo tipo de cosas, demasiadas para ponerlas en práctica",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 80,
+    "descripcion": "Cuando hablo con alguien que no conozco todavía, no doy más información que la necesaria",
+    "respuestas": [
+        "A: Normalmente Verdadero",
+        "B: ? ",
+        "C: Normalmente Falso"
+    ]
+},
+{
+    "orden": 81,
+    "descripcion": "Pongo más atención en:",
+    "respuestas": [
+        "A: Las cosas prácticas que me rodean",
+        "B: ? ",
+        "C: Los pensamientos y la imaginación  "
+    ]
+},
+{
+    "orden": 82,
+    "descripcion": "Cuando la gente me critica delante de otros me siento muy descorazonado y herido",
+    "respuestas": [
+        "A: Casi nunca",
+        "B: ? ",
+        "C: A menudo"
+    ]
+}
+,
+{
+    "orden": 83,
+    "descripcion": "Encuentro más interesante a la gente si sus puntos de vista son diferentes de los de la mayoría",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+
+{
+    "orden": 84,
+    "descripcion": "Al tratar con la gente es mejor: ",
+    "respuestas": [
+        "A: “Poner todas las cartas sobre la mesa”",
+        "B: ? ",
+        "C: “No descubrir tu propio juego” "
+    ]
+}
+,
+{
+    "orden": 85,
+    "descripcion": "A veces me gustaría más ponerme en mi sitio que perdonar y olvidar",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 86,
+    "descripcion": "Me gusta la gente que: ",
+    "respuestas": [
+        "A: Es estable y tradicional en sus intereses",
+        "B: ? ",
+        "C: Reconsidera seriamente sus puntos de vista sobre la vida"
+    ]
+}
+,
+{
+    "orden": 87,
+    "descripcion": "A veces me siento demasiado responsable sobre cosas que suceden a mí alrededor",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 88,
+    "descripcion": "El trabajo que me es familiar y habitual:",
+    "respuestas": [
+        "A: Me aburre y me da sueño",
+        "B: ? ",
+        "C: Me da seguridad y confianza"
+    ]
+}
+,
+{
+    "orden": 89,
+    "descripcion": "Logro terminar las cosas mejor cuando trabajo solo que cuando lo hago en equipo",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 90,
+    "descripcion": "Normalmente no me importa si mi habitación está desordenada",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 91,
+    "descripcion": "Me resulta fácil ser paciente, aun cuando alguien es lento para comprender lo que estoy explicándole",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso, me cuesta ser paciente"
+    ]
+}
+,
+{
+    "orden": 92,
+    "descripcion": "Me gusta unirme a otros que van a hacer algo juntos, como ir a un museo o de excursión",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 93,
+    "descripcion": "Soy algo perfeccionista y me gusta que las cosas se hagan bien",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 94,
+    "descripcion": "Cuándo tengo que hacer una larga cola por algún motivo, no me pongo tan intranquilo y nervioso como la mayoría",
+    "respuestas": [
+        "A: Verdadero, no me pongo",
+        "B: ? ",
+        "C: Falso, me pongo intranquilo"
+    ]
+}
+,
+{
+    "orden": 95,
+    "descripcion": "La gente me trata menos razonablemente de lo que merecen mis buenas intenciones",
+    "respuestas": [
+        "A: A veces",
+        "B: ? ",
+        "C: Nunca"
+    ]
+}
+,
+{
+    "orden": 96,
+    "descripcion": "Me lo paso bien con gente que muestra abiertamente sus emociones",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 97,
+    "descripcion": "No dejo que me depriman pequeñas cosas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 98,
+    "descripcion": "Si pudiera ayudar en el desarrollo de un invento útil preferiría encargarme de:",
+    "respuestas": [
+        "A: Investigarlo en el laboratorio",
+        "B: ? ",
+        "C: Mostrar a las personas su utilización"
+    ]
+}
+,
+{
+    "orden": 99,
+    "descripcion": "Si ser cortés y amable no da resultado puedo ser rudo y astuto cuando sea necesario",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 100,
+    "descripcion": "Me gusta ir a menudo a espectáculos y diversiones",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+}
+,
+{
+    "orden": 101,
+    "descripcion": "Me siento insatisfecho conmigo mismo",
+    "respuestas": [
+        "A: A veces",
+        "B: ? ",
+        "C: Raras veces"
+    ]
+}
+,
+{
+    "orden": 102,
+    "descripcion": "Si nos perdiéramos en una cuidad y los amigos no estuvieran de acuerdo conmigo en el camino a seguir:",
+    "respuestas": [
+        "A: No protestaría y les seguiría",
+        "B: ? ",
+        "C: Les haría saber que yo creía que mi camino era mejor"
+    ]
+},
+{
+    "orden": 103,
+    "descripcion": "La gente me considera una persona animada y sin preocupaciones",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 104,
+    "descripcion": "Si el banco se descuidara y no me cobrara algo que debiera, creo que:",
+    "respuestas": [
+        "A: Lo indicaría y lo pagaría",
+        "B: ? ",
+        "C: Yo no tengo por qué decírselo"
+    ]
+},
+{
+    "orden": 105,
+    "descripcion": "Siempre tengo que estar luchando contra mi timidez",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 106,
+    "descripcion": "Los profesores, sacerdotes y otras personas emplean mucho tiempo intentando impedirnos hacer lo que deseamos",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 107,
+    "descripcion": "Cuando estoy con un grupo, normalmente me siento, escucho y dejo que los demás lleven el peso de la conversación",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 108,
+    "descripcion": "Normalmente aprecio más belleza de un poema que una excelente estrategia en un deporte",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 109,
+    "descripcion": "Si uno es franco y abierto los demás intentan aprovecharse de él",
+    "respuestas": [
+        "A: Casi nunca",
+        "B: ? ",
+        "C: A menudo"
+    ]
+},
+{
+    "orden": 110,
+    "descripcion": "Siempre me interesan las cosas mecánicas y soy bastante bueno para arreglarlas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 111,
+    "descripcion": "A veces estoy tan enfrascado en mis pensamientos que, a no ser que salga de ellos, pierdo la noción del tiempo y desordeno o no encuentro mis cosa",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 112,
+    "descripcion": "Parece como si no pudiera confiar en más de la mitad de la gente que voy conociendo",
+    "respuestas": [
+        "A: Verdadero, no se puede confiar en ella",
+        "B: ? ",
+        "C: Falso, se puede confiar en ella"
+    ]
+},
+{
+    "orden": 113,
+    "descripcion": "Normalmente descubro que conozco a los demás mejor que ellos me conocen a mí",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 114,
+    "descripcion": "A menudo los demás dicen que mis ideas son realistas y prácticas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 115,
+    "descripcion": "Si creo que lo merecen, hago agudas y sarcásticas observaciones a los demás",
+    "respuestas": [
+        "A: A veces",
+        "B: ? ",
+        "C: Nunca"
+    ]
+},
+{
+    "orden": 116,
+    "descripcion": "A veces me siento como si hubiera hecho algo malo, aunque realmente no lo haya hecho",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 117,
+    "descripcion": "Me resulta fácil hablar sobre mi vida, incluso sobre aspectos que otros considerarían muy personales",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 118,
+    "descripcion": "Me gusta diseñar modos por los que el mundo pudiera cambiar y mejorar",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 119,
+    "descripcion": "Tiendo a ser muy sensible y preocuparme mucho acerca de algo que he hecho",
+    "respuestas": [
+        "A: Casi nunca",
+        "B: ? ",
+        "C: A menudo"
+    ]
+},
+{
+    "orden": 120,
+    "descripcion": "En el periódico que acostumbro a hojear me intereso más por:",
+    "respuestas": [
+        "A: Los artículos sobre los problemas sociales",
+        "B: ? ",
+        "C: Todas las noticias locales"
+    ]
+},
+{
+    "orden": 121,
+    "descripcion": "Preferiría emplear una tarde libre en:",
+    "respuestas": [
+        "A: Leer o trabajar en solitario en un proyecto",
+        "B: ? ",
+        "C: Hacer alguna tarea con los amigos"
+    ]
+},
+{
+    "orden": 122,
+    "descripcion": "Cuando hay algo molesto que hacer, prefiero:",
+    "respuestas": [
+        "A: Dejarlo a un lado hasta que no haya más remedio que hacerlo",
+        "B: ? ",
+        "C: Comenzar a hacerlo de inmediato"
+    ]
+},
+{
+    "orden": 123,
+    "descripcion": "Prefiero tomar la comida de medio día:",
+    "respuestas": [
+        "A: Con un grupo de gente",
+        "B: ? ",
+        "C: En solitario"
+    ]
+},
+{
+    "orden": 124,
+    "descripcion": "Soy paciente con las personas, incluso cuando no son corteses y consideradas con mis sentimientos",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 125,
+    "descripcion": "Cuando hago algo, normalmente me tomo tiempo para pensar antes en todo lo que necesito para la tarea",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 126,
+    "descripcion": "Me siento molesto cuando la gente emplea mucho tiempo para explicar algo",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 127,
+    "descripcion": "Mis amigos probablemente me describen como una persona",
+    "respuestas": [
+        "A: Cálida y amigable",
+        "B: ? ",
+        "C: Formal y objetiva"
+    ]
+},
+{
+    "orden": 128,
+    "descripcion": "Cuando algo me perturba, normalmente me olvido pronto de ello",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 129,
+    "descripcion": "Como afición agradable prefiero:",
+    "respuestas": [
+        "A: Hacer o reparar algo",
+        "B: ? ",
+        "C: Trabajar en grupo en una tarea comunitaria"
+    ]
+},
+{
+    "orden": 130,
+    "descripcion": "Creo que debo reclamar si en el restaurante recibo mal servicio o alimentos deficientes",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 131,
+    "descripcion": "Tengo más cambios de humor que la mayoría de las personas que conozco",
+    "respuestas": [
+        "A: Normalmente verdadero",
+        "B: ? ",
+        "C: Normalmente falso"
+    ]
+},
+{
+    "orden": 132,
+    "descripcion": "Cuando los demás no ven las cosas como la veo yo, normalmente logro convencerlos",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 133,
+    "descripcion": "Creo que ser libre para ser lo que desee es más importante que tener buenos modales y respetar las normas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 134,
+    "descripcion": "Me encanta hacer reír a la gente con historias ingeniosas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 135,
+    "descripcion": "Me considero una persona socialmente muy atrevida y comunicativa",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 136,
+    "descripcion": "Si una persona es lo suficientemente lista para eludir las normas sin que parezca que las incumple:",
+    "respuestas": [
+        "A: Podría incumplirlas si tiene razonas especiales para ello",
+        "B: ? ",
+        "C: Debería seguirlas a pesar de todo"
+    ]
+},
+{
+    "orden": 137,
+    "descripcion": "Cuando me uno a un nuevo grupo, normalmente encajo pronto",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 138,
+    "descripcion": "Prefiero leer historias rudas o de acción realista más que novelas sentimentales e imaginativas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 139,
+    "descripcion": "Sospecho que la persona que se muestra abiertamente amigable conmigo pueda ser desleal cuando yo no esté delante",
+    "respuestas": [
+        "A: Casi nunca",
+        "B: ? ",
+        "C: A menudo"
+    ]
+},
+{
+    "orden": 140,
+    "descripcion": "Cuando era niño empleaba la mayor parte de mi tiempo en:",
+    "respuestas": [
+        "A: Hacer o construir algo",
+        "B: ? ",
+        "C: Leer o imaginar cosas ideales"
+    ]
+},
+{
+    "orden": 141,
+    "descripcion": "Muchas personas son demasiado quisquillosas y sensibles, y por su propio bien deberían “endurecerse”",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 142,
+    "descripcion": "Me muestro tan interesado en pensar en las ideas que a veces paso por alto los detalles prácticos",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 143,
+    "descripcion": "Si alguien me hace una pregunta demasiado personal intento cuidadosamente evitar contestarla",
+    "respuestas": [
+        "A: Normalmente verdadero",
+        "B: ? ",
+        "C: Normalmente falso"
+    ]
+},
+{
+    "orden": 144,
+    "descripcion": "Cuando me piden hacer una tarea voluntaria digo que estoy demasiado ocupado",
+    "respuestas": [
+        "A: A veces",
+        "B: ? ",
+        "C: Raras veces"
+    ]
+},
+{
+    "orden": 145,
+    "descripcion": "Mis amigos me consideran una persona algo abstraída y no siempre práctica",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 146,
+    "descripcion": "Me siento muy abatido cuando la gente me critica en un grupo",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 147,
+    "descripcion": "Les surgen más problemas a quienes:",
+    "respuestas": [
+        "A: Se cuestionan o cambian métodos que son ya satisfactorios",
+        "B: ? ",
+        "C: Descartan enfoques nuevos o prometedores"
+    ]
+},
+{
+    "orden": 148,
+    "descripcion": "Soy muy cuidadoso cuando se trata de elegir a alguien con quien “abrirme” francamente",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 149,
+    "descripcion": "Me gusta más intentar nuevos modos de hacer las cosas que seguir caminos ya conocidos",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 150,
+    "descripcion": "Los demás dicen que suelo ser demasiado critico conmigo mismo",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 151,
+    "descripcion": "Generalmente me gusta más una comida si contiene alimentos familiares y cotidianos que si tiene alimentos poco corrientes",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 152,
+    "descripcion": "Puedo pasar fácilmente una mañana entera sin tener necesidad de hablar con alguien",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 153,
+    "descripcion": "Deseo ayudar a las personas",
+    "respuestas": [
+        "A: Siempre",
+        "B: ? ",
+        "C: A veces"
+    ]
+},
+{
+    "orden": 154,
+    "descripcion": "Yo creo que:",
+    "respuestas": [
+        "A: Algunos trabajos no deberían ser hechos tan cuidadosamente como otros",
+        "B: ? ",
+        "C: Cualquier trabajo habría que hacerlo bien si es que se va a hacer"
+    ]
+},
+{
+    "orden": 155,
+    "descripcion": "Me resulta difícil ser paciente cuando la gente me critica",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 156,
+    "descripcion": "Prefiero los momentos en que hay gente a mí alrededor",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 157,
+    "descripcion": "Cuando realizo una tarea no me encuentro satisfecho a no ser que ponga especial atención incluso a los pequeños detalles",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 158,
+    "descripcion": "Algunas veces me “ sacan de quicio” de un modo insoportable pequeñas cosas, aunque reconozca que son triviales",
+    "respuestas": [
+        "A: Sí",
+        "B: ? ",
+        "C: No"
+    ]
+},
+{
+    "orden": 159,
+    "descripcion": "Me gusta más escuchar a la gente hablar de sus sentimientos personales que de otros temas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 160,
+    "descripcion": "Hay ocasiones en que no me siento de humar para ver a nadie",
+    "respuestas": [
+        "A: Muy raras veces",
+        "B: ? ",
+        "C: Bastante a menudo"
+    ]
+},
+{
+    "orden": 161,
+    "descripcion": "Me gustaría más ser consejero orientador que arquitecto",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 162,
+    "descripcion": "En mi vida cotidiana casi nunca me encuentro con problemas que no puedo afrontar",
+    "respuestas": [
+        "A: Verdadero, puedo afrontarlos fácilmente",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 163,
+    "descripcion": "Cuando las personas hacen algo que me molesta, normalmente:",
+    "respuestas": [
+        "A: No le doy importancia",
+        "B: ? ",
+        "C: Se lo digo"
+    ]
+},
+{
+    "orden": 164,
+    "descripcion": "Yo creo más en:",
+    "respuestas": [
+        "A: Ser claramente serio en la vida cotidiana",
+        "B: ? ",
+        "C: Seguir casi siempre el dicho “Diviértete y sé feliz”"
+    ]
+},
+{
+    "orden": 165,
+    "descripcion": "Me gusta que haya alguna competitividad en las cosas que hago",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 166,
+    "descripcion": "La mayoría de las normas se han hecho para no cumplirlas cuando haya buenas razones para ello",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 167,
+    "descripcion": "Me cuesta bastante hablar delante de un grupo numeroso de personas",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 168,
+    "descripcion": "Preferiría un hogar en el que:",
+    "respuestas": [
+        "A: Se sigan normas estrictas de conducta",
+        "B: ? ",
+        "C: No haya muchas normas"
+    ]
+},
+{
+    "orden": 169,
+    "descripcion": "En las reuniones sociales suelo sentirme tímido e inseguro de mí mismo",
+    "respuestas": [
+        "A: Verdadero",
+        "B: ? ",
+        "C: Falso"
+    ]
+},
+{
+    "orden": 170,
+    "descripcion": "En la televisión prefiero:",
+    "respuestas": [
+        "A: Un programa sobre nuevos inventos prácticos",
+        "B: ? ",
+        "C: Un concierto de un artista famoso"
+    ]
+},
+{
+    "orden": 171,
+    "descripcion": "“Minuto” es a “hora” como “Segundo” es a:",
+    "respuestas": [
+        "A: Minuto",
+        "B: Milisegundo ",
+        "C: Hora"
+    ]
+},
+{
+    "orden": 172,
+    "descripcion": "“Renacuajo” es a “rana” como “larva” es a:",
+    "respuestas": [
+        "A: Araña",
+        "B: Gusano",
+        "C: Insecto"
+    ]
+},
+{
+    "orden": 173,
+    "descripcion": "“Jamón” es a “cerdo” como “chuleta” es a:",
+    "respuestas": [
+        "A: Cordero",
+        "B: Pollo",
+        "C: Merlusa"
+    ]
+},
+{
+    "orden": 174,
+    "descripcion": "“Hielo” es a “agua” como “roca” es a:",
+    "respuestas": [
+        "A: Lava",
+        "B: Arena",
+        "C: Petróleo"
+    ]
+},
+{
+    "orden": 175,
+    "descripcion": "“Mejor” es a “pésimo” como “peor” es a :",
+    "respuestas": [
+        "A: Malo",
+        "B: Santo",
+        "C: Óptimo"
+    ]
+},
+{
+    "orden": 176,
+    "descripcion": "Cual de las tres palabras indica algo diferente de las otras dos:",
+    "respuestas": [
+        "A: Terminal",
+        "B: EStacional",
+        "C: Cíclico"
+    ]
+},
+{
+    "orden": 177,
+    "descripcion": "¿Cuál de las tres palabras indica algo diferente de las otras dos?",
+    "respuestas": [
+        "A: Gato",
+        "B: Cerca",
+        "C: Planeta"
+    ]
+},
+{
+    "orden": 178,
+    "descripcion": "Lo opuesto de “correcto” es lo opuesto de:",
+    "respuestas": [
+        "A: Bueno",
+        "B: Erróneo",
+        "C: Adecuado"
+    ]
+},
+{
+    "orden": 179,
+    "descripcion": "¿Cuál de las tres palabras indica algo diferente de las otras dos?",
+    "respuestas": [
+        "A: Probable",
+        "B: Eventual",
+        "C: Inseguro"
+    ]
+},
+{
+    "orden": 180,
+    "descripcion": "Lo opuesto de lo opuesto de “inexacto” es:",
+    "respuestas": [
+        "A: Casual",
+        "B: Puntual",
+        "C: Incorrecto"
+    ]
+},
+{
+    "orden": 181,
+    "descripcion": "¿Qué número debe seguir al final de éstos? 1 – 4 – 9 – 16 ....",
+    "respuestas": [
+        "A: 20",
+        "B: 25",
+        "C: 32"
+    ]
+},
+{
+    "orden": 182,
+    "descripcion": "¿Qué letra debe seguir al final de éstas? A – B – D – G ....",
+    "respuestas": [
+        "A: H",
+        "B: K",
+        "C: J"
+    ]
+},
+{
+    "orden": 183,
+    "descripcion": "¿Qué letra debe seguir al final de éstas?  E – I – L ....",
+    "respuestas": [
+        "A: M",
+        "B: N",
+        "C: O"
+    ]
+},
+{
+    "orden": 184,
+    "descripcion": "¿Qué número debe seguir al final de éstos?  1/12 – 1/6 – 1/3 – 2/3 ....",
+    "respuestas": [
+        "A: 3/4",
+        "B: 4/3",
+        "C: 3/2"
+    ]
+},
+{
+    "orden": 185,
+    "descripcion": "¿Qué número debe seguir al final de éstos?  1 2 0 3 –1....",
+    "respuestas": [
+        "A: 5",
+        "B: 4",
+        "C: -3"
+    ]
+}
+]

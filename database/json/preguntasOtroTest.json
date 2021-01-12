@@ -1,0 +1,113 @@
+[{
+    "orden": 1,
+    "descripcion": "Aporto buenas soluciones "
+   
+    }, {
+    "orden": 2,
+    "descripcion": "Termino las tareas con éxito "
+  
+}, {
+    "orden": 3,
+    "descripcion": "Calculo mal las situaciones "
+   
+}, {
+    "orden": 4,
+    "descripcion": "Saco adelante mis tareas con soltura "
+  
+},
+{
+    "orden": 5,
+    "descripcion": "Hablo con conocimiento de causa "
+    
+}, {
+    "orden": 6,
+    "descripcion": "Tengo poco que aportar "
+    
+}, {
+    "orden": 7,
+    "descripcion": "Sé cómo acabar las cosas "
+    
+}, {
+    "orden": 8,
+    "descripcion": "No comprendo las cosas "
+   
+},
+{
+    "orden": 9,
+    "descripcion": "Sobresalgo en lo que hago "
+  
+},
+{
+    "orden": 10,
+    "descripcion": "No preveo las consecuencias de las cosas "
+  
+},
+{
+    "orden": 11,
+    "descripcion": " Soy capaz de hacer bien las tareas, aunque sean difíciles "
+    
+},
+
+{
+    "orden": 12,
+    "descripcion": "Si me esforzara lo suficiente, podría aprobar las asignaturas de este año "
+
+},
+{
+    "orden": 13,
+    "descripcion": " Aunque preste atención a las explicaciones que me dan los profesores, las tareas no me salen "
+   
+},
+{
+    "orden": 14,
+    "descripcion": "Creo que podré obtener buenas notas este año "
+    
+},
+{
+    "orden": 15,
+    "descripcion": "Soy capaz de mantener un buen rendimiento a lo largo de todo un año "
+    
+},
+{
+    "orden": 16,
+    "descripcion": "Soy lento para aprender "
+   
+},
+{
+    "orden": 17,
+    "descripcion": " No soy capaz de sacarme buenas notas en las asignaturas "
+   
+},
+{
+    "orden": 18,
+    "descripcion": "Cometo muchos errores cuando hago las tareas "
+   
+},
+{
+    "orden": 19,
+    "descripcion": "Me olvido fácilmente lo que aprendo "
+},
+{
+    "orden": 20,
+    "descripcion": "Me cuesta entender lo que leo "
+ 
+}
+,
+{
+    "orden": 21,
+    "descripcion": "Soy capaz de realizar buenos trabajos en clase "
+ 
+}
+,
+{
+    "orden": 22,
+    "descripcion": "Si me dedico a fondo, puedo estudiar cualquier cosa "
+ 
+}
+,
+{
+    "orden": 23,
+    "descripcion": "Me resulta difícil estudiar "
+ 
+}
+]

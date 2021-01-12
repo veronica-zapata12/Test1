@@ -1,0 +1,52 @@
+<app-header></app-header>
+<div class="container">
+<section class="ventana-emergente">
+    <ng-template #contenido let-c="close" let-d="dismiss" class="template">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title"><strong>¡¡INSTRUCCIONES!!</strong></h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>       
+      </div>
+      <div class="modal-body">
+        <div>
+          <p>A continuación encontrará, una serie de preguntas y debajo unos números del 1-5,
+            donde el <strong> 1 es estar totalmente en desacuerdo y 5 es totalmente de acuerdo.</strong> <br>
+            
+            
+            </p>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Aceptar</button>
+    </div>
+    </ng-template>
+  </section>
+  <section>
+    <div class="pregunta"
+        *ngFor="let pregunta of preguntas let preguntaindex = index ">
+        <span for=preguntas> <strong>{{pregunta.orden}}. {{pregunta.descripcion}}</strong></span>
+
+        <div>
+          <br>
+          <mat-button-toggle-group #res="matButtonToggleGroup"
+          *ngFor="let item of respuestas; let indice = index">
+            <mat-button-toggle class="chip"
+              [ngClass]="esRespuestaSeleccionado(item, pregunta.orden) ? 'chip-hito-select' : 'chip'"
+              (click)="agregar(item, pregunta.orden)">
+              {{item}}
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        <div class="labels">
+          <div class="label-left">Totalmente en desacuerdo</div>
+          <div class="label-right">Totalmente de acuerdo</div>
+        </div>
+        </div>
+
+      </div>
+      <div class="col text-center">
+      <button [disabled]="respuestasSelecionadas.length <=22"  class="btn btns-primary"  type="submit" (click)="enviar()">Enviar</button>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,63 @@
+<app-header></app-header>
+<div class="container">
+    <section class="ventana-emergente">
+        <ng-template #content let-c="close" let-d="dismiss" class="template">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title"><strong>CONSENTIMIENTO INFORMADO</strong></h4>
+            
+           
+          </div>
+          <div class="modal-body">
+            <div>
+              <p class="p-modal">
+                
+                Con mi firma y de acuerdo con la Ley Estatutaria 1581 de 2012 de Protección de Datos y con
+                el decreto 1377 de 2013, autorizo como titular de los datos que plasmo, que estos sean
+                incorporados en una base de datos de responsabilidad de la Universidad Católica de Oriente,
+                siendo tratados con la finalidad de gestión académica y bienestar de conformidad con el aviso
+                de privacidad publicado en www.uco.edu.co y conservando el anonimato en todo momento.
+                Este es un cuestionario que mide 16 rasgos de personalidad (afectividad, razonamiento,
+                estabilidad, dominancia, conformidad grupal, atrevimiento, sensibilidad, suspicacia
+                imaginación, astucia, culpabilidad, autosuficiencia, autocontrol y tensión). Con la información
+                podremos desarrollar programas de acompañamiento institucional e individual que nos
+                ayudarán a garantizar tu permanencia y experiencia como estudiante universitario. Es
+                importante para la institución que usted diligencie a consciencia este formulario. Al final se te
+                entregará un reporte personalizado con valoraciones de los 16 rasgos de personalidad de
+                acuerdo a tu respuesta.
+                </p>
+            </div>
+    
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="c('Save click'); mostrarContenido()">Acepto</button>
+            <button type="button" class="btn btn-outline-danger"  (click)="d('Cross click')">No acepto</button>
+        </div>
+        </ng-template>
+      </section>
+    <section *ngIf="habilitarContenido">
+    
+    <h5 style="text-align: center;">Bienvenido.</h5>
+    <p>
+            En este espacio encontraras dos test,
+            es importante para la institución que usted diligencie a consciencia este formulario. <br>
+            Al final se te entregará un reporte personalizado con valoraciones de los test de
+            acuerdo a tu respuesta. <br>
+            Dale click al el test que desea realizar
+        </p>
+    <div style="text-align: center;" class="col-auto">
+        <button type="button"  (click)="elegirTest('testPersonalidad')" class="chip btn-outline-dark">Test de personalidad</button>
+        <button type="button"  (click)="elegirTest('otroTest')" class="chip btn-outline-dark"> Test de Autoeficacia y Autoeficiencia</button>
+    </div>
+</section>
+<section  *ngIf="!habilitarContenido">
+    <div class="alert alert-danger">UPS! Algo salio mal. <br>
+        Debes aceptar el <strong> consentimiento informado</strong> 
+        para poder acceder a la información
+    </div>
+    <div style="text-align: center;">
+    <a href="/inicio" ><img style="width: 30%; "  src="../../../assets/imagenes/actualizar-pagina.jpg"  alt=""></a><br>
+    <label for="">Haz click para recargar</label>
+</div>
+
+</section>
+</div>
