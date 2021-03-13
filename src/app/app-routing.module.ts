@@ -9,6 +9,7 @@ import { DatosPersonalComponent } from './datos-personal/datos-personal.componen
 import { InicioComponent } from './inicio/inicio.component';
 import { PreguntasComponent } from './otro-test/preguntas/preguntas.component';
 import { ReporteComponent } from './otro-test/reporte/reporte.component';
+import { PreguntasMotivacionComponent } from './preguntas-motivacion/preguntas/preguntas-motivacion/preguntas-motivacion.component';
 
 
 
@@ -30,16 +31,21 @@ const routes: Routes = [
     component: ResultadoPersonalidadComponent
   },
   {
-    path: 'reporte',
+    path: 'reporte-personalidad',
     component: ReportePersonalidadComponent
   },
   {
-    path: 'reporte-otro',
+    path: 'reporte-autoYefi',
     component:ReporteComponent
   },
   {
     path:'cuestionario-otro',
     component:PreguntasComponent
+
+  },
+  {
+    path:'cuestionario-motivacion',
+    component:PreguntasMotivacionComponent
 
   },
  

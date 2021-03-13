@@ -23,6 +23,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { PreguntasComponent } from './otro-test/preguntas/preguntas.component';
 import { ReporteComponent } from './otro-test/reporte/reporte.component';
+import { PreguntasMotivacionComponent } from './preguntas-motivacion/preguntas/preguntas-motivacion/preguntas-motivacion.component';
+import { ReporteMotivacionComponent } from './preguntas-motivacion/reporte/reporte-motivacion/reporte-motivacion.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ReporteComponent } from './otro-test/reporte/reporte.component';
     ResultadoPersonalidadComponent,
     InicioComponent,
     PreguntasComponent,
-    ReporteComponent
+    ReporteComponent,
+    PreguntasMotivacionComponent,
+    ReporteMotivacionComponent
   ],
   imports: [
     BrowserModule,

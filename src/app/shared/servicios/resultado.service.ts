@@ -79,7 +79,7 @@ export class ResultadoService {
   }
   public enviar(): Promise<any> {
     this.resultado.fecha = new Date().toString().substring(0, 15);
-    return //this.coleccionResultado.add(this.resultado);
+    return this.coleccionResultado.add(this.resultado);
   }
 }
 

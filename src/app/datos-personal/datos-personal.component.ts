@@ -5,6 +5,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ProgramasService } from '../shared/servicios/programas.service';
 import { OtroTestService } from '../shared/servicios/otro-test.service';
 import { InicioService } from '../shared/servicios/inicio.service';
+import { MotivacionService } from '../shared/servicios/motivacion.service';
 
 @Component({
   selector: 'app-datos-personal',
@@ -13,9 +14,9 @@ import { InicioService } from '../shared/servicios/inicio.service';
 })
 export class DatosPersonalComponent implements OnInit {
   programas = [];
-  habilitarTest:boolean;
+  habilitarTest:string;
 
-  constructor(private router: Router, private resultadoService: ResultadoService, private progrmasService: ProgramasService,private otroTestService:OtroTestService, private inicioService:InicioService) { }
+  constructor(private router: Router, private resultadoService: ResultadoService, private progrmasService: ProgramasService,private motivacioService:MotivacionService,private otroTestService:OtroTestService, private inicioService:InicioService) { }
 
   ngOnInit(): void {
     this.resultadoService.limpiarTodo();
@@ -37,14 +38,19 @@ export class DatosPersonalComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.form.value);
+  
 
-    if(this.habilitarTest){
+    if(this.habilitarTest== 'testPersonalidad'){
     this.resultadoService.agregarDatosPersonales(this.form.value);
     this.router.navigate(['/cuestionario']);
-    }else{
+    }
+     if (this.habilitarTest=='otro-test'){
       this.otroTestService.agregarDatosPersonales(this.form.value);
       this.router.navigate(['/cuestionario-otro']);
+    }
+     if (this.habilitarTest=='motivacion'){
+      this.motivacioService.agregarDatosPersonales(this.form.value);
+      this.router.navigate(['/cuestionario-motivacion']);
     }
     
   }

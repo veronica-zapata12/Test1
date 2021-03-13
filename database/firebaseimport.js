@@ -16,7 +16,7 @@ const acciones = [
     { accion: 'preguntas-personalidad', run: inicializarPreguntasPersonalidad },
     { accion: 'preguntas-otro-test', run: inicializarPreguntasOtro },
     {accion: 'programas', run: inicializarProgramas},
-    
+    { accion: 'preguntas-motivacion-aprendizaje', run: inicializarPreguntasMotivacion },
 
     { accion: 'all', run: all }
 ];
@@ -63,6 +63,15 @@ function inicializarPreguntasOtro() {
 
     preguntas.forEach(preguntas => {
         adicionar("preguntas-otro-test", preguntas);
+    });
+    return;
+}
+function inicializarPreguntasMotivacion() {
+    let preguntasData = fs.readFileSync('json/preguntasMotivacionAprendizaje.json');
+    let preguntas = JSON.parse(preguntasData);
+
+    preguntas.forEach(preguntas => {
+        adicionar("preguntas-motivacion-aprendizaje", preguntas);
     });
     return;
 }

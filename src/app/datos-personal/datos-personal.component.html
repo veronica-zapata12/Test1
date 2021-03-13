@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <div class="container">
-  <div class="messages-guide" *ngIf="habilitarTest">
+  <div class="messages-guide" *ngIf="habilitarTest === 'testPersonalidad'">
     <img src="../../assets/imagenes/escudo-uco.png" alt="">
     <p><strong>Bienvenido. <br>
         Este es un cuestionario que mide 16 rasgos de personalidad (afectividad, razonamiento,
@@ -11,7 +11,7 @@
         Al final se te entregará un reporte personalizado con valoraciones de los 16 rasgos de personalidad de
         acuerdo a tu respuesta. </strong></p>
   </div>
-  <div class="messages-guide" *ngIf="!habilitarTest">
+  <div class="messages-guide" *ngIf="habilitarTest === 'otro-test'">
     <img src="../../assets/imagenes/escudo-uco.png" alt="">
     <p><strong>Bienvenido. <br>
         Este es un cuestionario que mide algunos aspectos congnitivos y racionales de los individuos. <br>

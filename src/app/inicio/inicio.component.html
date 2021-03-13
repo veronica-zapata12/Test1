@@ -46,8 +46,9 @@
         </p>
     <div style="text-align: center;" class="col-auto">
         <button type="button"  (click)="elegirTest('testPersonalidad')" class="chip btn-outline-dark">Test de personalidad</button>
-        <button type="button"  (click)="elegirTest('otroTest')" class="chip btn-outline-dark"> Test de Autoeficacia y Autoeficiencia</button>
-    </div>
+        <button type="button"  (click)="elegirTest('otro-test')" class="chip btn-outline-dark"> Test de Autoeficacia y Autoeficiencia</button>
+        <button type="button"  (click)="elegirTest('motivacion')" class="chip btn-outline-dark"> Test de motivacion del aprendizaje</button>
+      </div>
 </section>
 <section  *ngIf="!habilitarContenido">
     <div class="alert alert-danger">UPS! Algo salio mal. <br>

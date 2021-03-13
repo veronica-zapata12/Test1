@@ -4,21 +4,23 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class InicioService {
-  private habilitar:boolean;
+  private habilitar:string;
  
     constructor(){}
   
-    public escogerTest (test:string):boolean{
-      if (test ==="otroTest"){
-        return this.habilitar=false
-      }else{
-        return this.habilitar;
+    public escogerTest (test:string):string{
+      if (test =="otro-test"){
+        return this.habilitar=test;
+      }else if(test =="testPersonalidad"){
+        return this.habilitar=test;
+      }else if(test =="motivacion"){
+        return this.habilitar=test;
       }
     }
     public habilitarTest(){
       return this.habilitar
     }
     public limpiarTodo(){
-     this.habilitar= true;
+     this.habilitar= "";
     }
 }
