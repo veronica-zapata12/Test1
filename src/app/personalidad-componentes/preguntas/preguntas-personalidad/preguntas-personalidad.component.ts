@@ -7,6 +7,7 @@ import { PreguntasService } from 'src/app/shared/servicios/preguntas.service';
 import { CalculosService } from 'src/app/shared/servicios/calculos.service';
 import { TablaMujeresService } from 'src/app/shared/servicios/tabla-mujeres.service';
 import { TablaHombresService } from 'src/app/shared/servicios/tabla-hombres.service';
+import { InicioService } from 'src/app/shared/servicios/inicio.service';
 
 @Component({
   selector: 'app-preguntas-personalidad',
@@ -54,7 +55,7 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
   constructor(private router: Router, private config: NgbModalConfig, private modalService: NgbModal,
     private preguntasService: PreguntasService, private resultadoService: ResultadoService,
     private calculoService: CalculosService, public tablaMujeresService: TablaMujeresService,
-    public tablaHombresService: TablaHombresService
+    public tablaHombresService: TablaHombresService,private inicioService:InicioService
   ) {
     config.backdrop = 'static';
     config.keyboard = false;
@@ -62,8 +63,9 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit() {
+    this.inicioService.limpiarTodo();
     window.scrollTo(0, 0);
-    this.preguntasService.consultarPreguntas().subscribe(data => {
+    this.preguntasService.consultarPreguntasPersonalidad().subscribe(data => {
       this.preguntas = data;
     });
     if(!this.resultadoService.obtenerDatosPersonales()){

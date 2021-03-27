@@ -4,6 +4,8 @@ import { map } from 'rxjs/operators';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable, of } from 'rxjs';
 import { OrdenamientoService } from './ordenamiento.service';
+import { preguntasAutoCotrol } from '../modelos/preguntasAutoCotrol';
+import { PreguntasMotivacion } from '../modelos/preguntasMotivacion';
 
 
 @Injectable({
@@ -11,30 +13,62 @@ import { OrdenamientoService } from './ordenamiento.service';
 })
 export class PreguntasService {
 
-  private readonly nombreColeccion = 'preguntas-personalidad';
+  private readonly nombreColeccionPersonalidad = 'preguntas personalidad';
+  private readonly nombreColeccionAutocontrol = 'preguntas autocontrol y eficacia';
+  private readonly nombreColeccionMotivacion = 'preguntas motivacion aprendizaje';
 
-  private coleccionPreguntas: AngularFirestoreCollection<Preguntas>;
+  private coleccionPreguntasPersonalidad: AngularFirestoreCollection<Preguntas>;
+  private coleccionPreguntasAutocontrol: AngularFirestoreCollection<preguntasAutoCotrol>;
+  private coleccionPreguntasMotivacion: AngularFirestoreCollection<PreguntasMotivacion>;
 
-  private preguntas: Preguntas[];
+  private preguntasPersonalidad: Preguntas[];
+  private preguntasAutocontrol: preguntasAutoCotrol[];
+  private preguntasMotivacion: PreguntasMotivacion[];
 
   constructor(afs: AngularFirestore,
               private ordenamientoService: OrdenamientoService) {
-    this.coleccionPreguntas = afs.collection<Preguntas>(this.nombreColeccion);
+    this.coleccionPreguntasPersonalidad = afs.collection<Preguntas>(this.nombreColeccionPersonalidad);
+    this.coleccionPreguntasAutocontrol = afs.collection<preguntasAutoCotrol>(this.nombreColeccionAutocontrol);
+    this.coleccionPreguntasMotivacion = afs.collection<PreguntasMotivacion>(this.nombreColeccionMotivacion);
+
   }
 
 
-  consultarPreguntas(): Observable<Preguntas[]> {
-    let preguntasobservable = this.coleccionPreguntas.valueChanges().pipe(map(preguntas => {
-      this.preguntas = preguntas.sort(this.ordenamientoService.ascendentemente('orden'));
+  consultarPreguntasPersonalidad(): Observable<Preguntas[]> {
+    let preguntasPersonalidadobservable = this.coleccionPreguntasPersonalidad.valueChanges().pipe(map(preguntas => {
+      this.preguntasPersonalidad = preguntas.sort(this.ordenamientoService.ascendentemente('orden'));
       return preguntas;
     }));
 
-    if (this.preguntas) {
-      preguntasobservable = of(this.preguntas);
+    if (this.preguntasPersonalidad) {
+      preguntasPersonalidadobservable = of(this.preguntasPersonalidad);
       
     }
-    return preguntasobservable;
+    return preguntasPersonalidadobservable;
   }
 
+ consultarPreguntasAutocontrol(): Observable<preguntasAutoCotrol[]> {
+    let preguntasAutocontrolobservable = this.coleccionPreguntasAutocontrol.valueChanges().pipe(map(preguntas => {
+      this.preguntasAutocontrol = preguntas.sort(this.ordenamientoService.ascendentemente('orden'));
+      return preguntas;
+    }));
 
+    if (this.preguntasAutocontrol) {
+      preguntasAutocontrolobservable = of(this.preguntasAutocontrol);
+      
+    }
+    return preguntasAutocontrolobservable;
+  }
+  consultarPreguntasMotivacion(): Observable<PreguntasMotivacion[]> {
+    let preguntasMotivacionobservable = this.coleccionPreguntasMotivacion.valueChanges().pipe(map(preguntas => {
+      this.preguntasMotivacion = preguntas.sort(this.ordenamientoService.ascendentemente('orden'));
+      return preguntas;
+    }));
+
+    if (this.preguntasMotivacion) {
+      preguntasMotivacionobservable = of(this.preguntasMotivacion);
+      
+    }
+    return preguntasMotivacionobservable;
+  }
 }

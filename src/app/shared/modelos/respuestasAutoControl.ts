@@ -1,6 +1,6 @@
 import { DatosPersonales } from './datos-personales';
 
-export interface RespuestasOtroTest {
+export interface RespuestasAutoControl {
     
         datosPersonales: DatosPersonales;
         fecha: string;

@@ -1,4 +1,4 @@
-export interface PreguntasOtroTest {
+export interface preguntasAutoCotrol {
     orden: number;
     descripcion: string;
 }

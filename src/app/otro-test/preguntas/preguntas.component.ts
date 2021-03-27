@@ -1,10 +1,11 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { PreguntasOtroTest } from 'src/app/shared/modelos/preguntasOtroTest';
-import { OtroTestService } from 'src/app/shared/servicios/otro-test.service';
-import { PreguntasOtroTestService } from 'src/app/shared/servicios/preguntas-otro-test.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { AutoContolService } from 'src/app/shared/servicios/auto-contol.service';
+import { preguntasAutoCotrol } from 'src/app/shared/modelos/preguntasAutoCotrol';
+import { PreguntasService } from 'src/app/shared/servicios/preguntas.service';
+import { InicioService } from 'src/app/shared/servicios/inicio.service';
 @Component({
   selector: 'app-preguntas',
   templateUrl: './preguntas.component.html',
@@ -13,24 +14,25 @@ import Swal from 'sweetalert2';
 export class PreguntasComponent implements OnInit , AfterViewInit {
   respuestas=[1,2,3,4,5];
   respuestasSelecionadas=[];
-  public preguntas: PreguntasOtroTest[];
+  public preguntas: preguntasAutoCotrol[];
   @ViewChild('contenido') contenidoDelModal;
   ngAfterViewInit() {
     window.scrollTo(0, 0);
-    if(this.OtroTestSevice.obtenerDatosPersonales()){
+    if(this.autoContolService.obtenerDatosPersonales()){
       this.open();
     }
     
   }
-  constructor(private router: Router,private modalService: NgbModal, private preguntasOtroTestSevice: PreguntasOtroTestService, private OtroTestSevice: OtroTestService) { }
+  constructor(private router: Router,private modalService: NgbModal, private preguntasAutocontrolSevice: PreguntasService , private autoContolService: AutoContolService, private inicioService:InicioService) { }
 
   ngOnInit(): void {
+    this.inicioService.limpiarTodo();
     window.scrollTo(0, 0);
-    this.preguntasOtroTestSevice.consultarPreguntas().subscribe(data =>{
+    this.preguntasAutocontrolSevice.consultarPreguntasAutocontrol().subscribe(data =>{
       this.preguntas = data;
       
     });
-    if(!this.OtroTestSevice.obtenerDatosPersonales()){
+    if(!this.autoContolService.obtenerDatosPersonales()){
       this.router.navigate(['/inicio']);
     }
   }
@@ -66,8 +68,8 @@ export class PreguntasComponent implements OnInit , AfterViewInit {
     return this.respuestasSelecionadas.some(posicion => posicion.valor === numero && posicion.orden === orden);
   }
   enviar(){
-    this.OtroTestSevice.agregarRespuestas(this.respuestasSelecionadas);
-    this.OtroTestSevice.enviar();
+    this.autoContolService.agregarRespuestas(this.respuestasSelecionadas);
+    this.autoContolService.enviar();
     Swal.fire({
       position: 'center',
       icon: 'success',

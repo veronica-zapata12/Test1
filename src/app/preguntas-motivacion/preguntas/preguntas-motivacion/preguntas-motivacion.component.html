@@ -24,8 +24,19 @@
     </ng-template>
   </section>
   <section>
+    <div>
+      <h2>Test De Motivación Del Aprendizaje</h2>
+      <div class="respuestas-info">
+        <p><strong>RECUERDE QUE DEBE RESPONDER TODAS LAS PREGUNTAS EN ORDEN YA QUE ESTO PUEDE AFECTAR LOS RESULTADOS
+          DEL TEST.</strong>
+          <br>
+          Este Test tiene por finalidad conocer la percepción que tienes como estudiante respecto a tu motivación académica. <br>
+          No hay respuestas buenas o malas.
+        </p>
+
+      </div>
     <div class="pregunta"
-        *ngFor="let pregunta of preguntas let preguntaindex = index ">
+        *ngFor="let pregunta of preguntas | paginate:{itemsPerPage:24, currentPage:paginaActual}; let preguntaindex = index ">
         <span for=preguntas> <strong>{{pregunta.orden}}. {{pregunta.descripcion}}</strong></span>
 
         <div>
@@ -46,7 +57,10 @@
 
       </div>
       <div class="col text-center">
-      <button  class="btn btns-primary"  type="submit" (click)="enviar()">Enviar</button>
+      <button *ngIf="respuestasSelecionadas.length === 46" class="btn btns-primary"  type="submit" (click)="enviar()">Enviar</button>
+      <pagination-controls (pageChange)="paginaActual = $event" previousLabel="Anterior" nextLabel="Siguiente"
+      (click)="iniciar()"></pagination-controls>
     </div>
+  </div>
   </section>
 </div>

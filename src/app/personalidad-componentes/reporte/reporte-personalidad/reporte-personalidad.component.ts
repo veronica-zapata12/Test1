@@ -38,6 +38,7 @@ export class ReportePersonalidadComponent implements OnInit {
         fecha: "",
         nombre: "",
         documento: "",
+        programa:"",
         genero: "",
         item1: 0,
         item2: 0,
@@ -268,6 +269,7 @@ export class ReportePersonalidadComponent implements OnInit {
       copia1.fecha = row.fecha;
       copia1.nombre = row.datosPersonales.nombre;
       copia1.documento = row.datosPersonales.documento;
+      copia1.programa=row.datosPersonales.programa;
       copia1.genero = row.datosPersonales.genero;
       copia1.item1 = row.respuestas[0];
       copia1.item2 = row.respuestas[1];

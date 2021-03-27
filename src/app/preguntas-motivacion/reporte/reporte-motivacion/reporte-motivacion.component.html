@@ -1,1 +1,16 @@
-<p>reporte-motivacion works!</p>
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"><strong> Resultados del test de motivación</strong></div>
+        <div class="container">
+            <div class="row" *ngIf="respuestas">
+                <div class="col-md-12">Total encuestados: {{respuestas.length}}</div>
+                <div class="col-md 12">
+                    <button (click)="descargar()" class="btn btn-primary">Descargar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

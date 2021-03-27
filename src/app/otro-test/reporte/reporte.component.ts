@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ReporteService } from 'src/app/shared/servicios/reporte.service';
 import { OrdenamientoService } from 'src/app/shared/servicios/ordenamiento.service';
 import { ExcelService } from 'src/app/shared/servicios/excel.service';
-import { RespuestasOtroTest } from 'src/app/shared/modelos/respuestasOtroTest';
+import { RespuestasAutoControl } from 'src/app/shared/modelos/respuestasAutoControl';
 
 @Component({
   selector: 'app-reporte',
@@ -13,7 +13,7 @@ export class ReporteComponent implements OnInit {
 /**
     * Listado de respuestas
     */
-   public respuestas: RespuestasOtroTest[];
+   public respuestas: RespuestasAutoControl[];
    copia = [];
    public respuestasCopiar = [];
  
@@ -22,7 +22,7 @@ export class ReporteComponent implements OnInit {
  
    ngOnInit() {
  
-     this.reporteService.obtenerTodosOtroTest().subscribe(respuestas => {
+     this.reporteService.obtenerTodosAutocontrol().subscribe(respuestas => {
        this.respuestas = respuestas;
        this.respuestas.sort(this.ordenamiento.ascendentemente('orden'));
  
@@ -39,6 +39,7 @@ export class ReporteComponent implements OnInit {
       fecha: "",
       nombre: "",
       documento: "",
+      programa:"",
       genero: "",
       item1	:0	,
       item2	:0	,
@@ -70,6 +71,7 @@ export class ReporteComponent implements OnInit {
       copia1.fecha = row.fecha;
       copia1.nombre = row.datosPersonales.nombre;
       copia1.documento = row.datosPersonales.documento;
+      copia1.programa=row.datosPersonales.programa;
       copia1.genero =row.datosPersonales.genero;
       copia1.item1 = row.respuestas[0];
        copia1.item2 = row.respuestas[1];
@@ -101,7 +103,7 @@ export class ReporteComponent implements OnInit {
     });
     console.log(this.copia);
     
-    this.excelervice.exportAsExcelFile(this.copia, 'respuestas Test autoeficacia');
+    this.excelervice.exportAsExcelFile(this.copia, 'respuestas Test motivacion');
     this.copia=[];
   }
 

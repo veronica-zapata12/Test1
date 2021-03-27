@@ -1,6 +1,6 @@
 import { DatosPersonales } from './datos-personales';
 
-export interface OtroTest{
+export interface autoControl{
     datosPersonales: DatosPersonales;
 
 }

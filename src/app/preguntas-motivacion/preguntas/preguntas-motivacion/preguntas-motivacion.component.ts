@@ -2,9 +2,10 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { PreguntasMotivacion } from 'src/app/shared/modelos/preguntasMotivacion';
 import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { PreguntasMotivacionService } from 'src/app/shared/servicios/preguntas-motivacion.service';
 import { MotivacionService } from 'src/app/shared/servicios/motivacion.service';
 import Swal from 'sweetalert2';
+import { PreguntasService } from 'src/app/shared/servicios/preguntas.service';
+import { InicioService } from 'src/app/shared/servicios/inicio.service';
 
 @Component({
   selector: 'app-preguntas-motivacion',
@@ -14,6 +15,7 @@ import Swal from 'sweetalert2';
 export class PreguntasMotivacionComponent  implements OnInit , AfterViewInit {
   respuestas=[1,2,3,4,5];
   respuestasSelecionadas=[];
+  paginaActual = 1;
   public preguntas: PreguntasMotivacion[];
   @ViewChild('contenido') contenidoDelModal;
   ngAfterViewInit() {
@@ -23,11 +25,12 @@ export class PreguntasMotivacionComponent  implements OnInit , AfterViewInit {
     }
     
   }
-  constructor(private router: Router,private modalService: NgbModal, private preguntasMotivacionSevice: PreguntasMotivacionService, private motivacionSevice: MotivacionService) { }
+  constructor(private router: Router,private modalService: NgbModal, private preguntasMotivacionSevice: PreguntasService, private motivacionSevice: MotivacionService, private inicioService:InicioService) { }
 
   ngOnInit(): void {
+    this.inicioService.limpiarTodo();
     window.scrollTo(0, 0);
-    this.preguntasMotivacionSevice.consultarPreguntas().subscribe(data =>{
+    this.preguntasMotivacionSevice.consultarPreguntasMotivacion().subscribe(data =>{
       this.preguntas = data;
       
     });
@@ -37,6 +40,9 @@ export class PreguntasMotivacionComponent  implements OnInit , AfterViewInit {
   }
   public open() {
     this.modalService.open(this.contenidoDelModal, { size: 'lg', centered: true })
+  }
+  iniciar() {
+    window.scrollTo(0, 200);
   }
   /**
    *  METODO PARA LLENAR EL ARREGLO DE LAS RESPUESTAS

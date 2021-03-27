@@ -30,27 +30,26 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-dark" (click)="c('Save click'); mostrarContenido()">Acepto</button>
-            <button type="button" class="btn btn-outline-danger"  (click)="d('Cross click')">No acepto</button>
+            <button type="button" class="btn btn-outline-danger"  (click)="d('Cross click'); nomostrarContenido()">No acepto</button>
         </div>
         </ng-template>
       </section>
     <section *ngIf="habilitarContenido">
     
     <h5 style="text-align: center;">Bienvenido.</h5>
-    <p>
-            En este espacio encontraras dos test,
-            es importante para la institución que usted diligencie a consciencia este formulario. <br>
-            Al final se te entregará un reporte personalizado con valoraciones de los test de
-            acuerdo a tu respuesta. <br>
+    <p style="text-align: center;">
+            En este espacio encontraras algunos test de relevancia para la universidad,
+            es importante para la institución que usted diligencie a conciencia este formulario. <br>
+            
             Dale click al el test que desea realizar
         </p>
     <div style="text-align: center;" class="col-auto">
-        <button type="button"  (click)="elegirTest('testPersonalidad')" class="chip btn-outline-dark">Test de personalidad</button>
+        <button type="button"  (click)="elegirTest('testPersonalidad')" class="chip btn-outline-dark">Test de Personalidad</button>
         <button type="button"  (click)="elegirTest('otro-test')" class="chip btn-outline-dark"> Test de Autoeficacia y Autoeficiencia</button>
-        <button type="button"  (click)="elegirTest('motivacion')" class="chip btn-outline-dark"> Test de motivacion del aprendizaje</button>
+        <button type="button"  (click)="elegirTest('motivacion')" class="chip btn-outline-dark"> Test de Motivación del Aprendizaje</button>
       </div>
 </section>
-<section  *ngIf="!habilitarContenido">
+<section  *ngIf="habilitarContenido == false">
     <div class="alert alert-danger">UPS! Algo salio mal. <br>
         Debes aceptar el <strong> consentimiento informado</strong> 
         para poder acceder a la información

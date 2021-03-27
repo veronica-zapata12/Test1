@@ -1,33 +1,30 @@
 import { Injectable } from '@angular/core';
+import { RespuestasAutoControl } from '../modelos/respuestasAutoControl';
 import { DatosPersonales } from '../modelos/datos-personales';
-import { RespuestasOtroTest } from '../modelos/respuestasOtroTest';
 import { AngularFirestoreCollection, AngularFirestore } from '@angular/fire/firestore';
-
 
 @Injectable({
   providedIn: 'root'
 })
-export class OtroTestService {
-
-  private otroTest:RespuestasOtroTest={
+export class AutoContolService {
+  private otroTest:RespuestasAutoControl={
     datosPersonales: null,
     fecha:null,
     respuestas:null
 
   }; 
   
-  private readonly nombreColeccion = 'resultado otroTest';
+  private readonly nombreColeccion = 'resultado autocontrol y eficacia';
 
 
-  private coleccionResultado: AngularFirestoreCollection<RespuestasOtroTest>;
+  private coleccionResultado: AngularFirestoreCollection<RespuestasAutoControl>;
 
-  private habilitar:boolean;
+  
   constructor(afs: AngularFirestore) {
-    this.coleccionResultado = afs.collection<RespuestasOtroTest>(this.nombreColeccion);
+    this.coleccionResultado = afs.collection<RespuestasAutoControl>(this.nombreColeccion);
   }
   public agregarDatosPersonales(datosPersonales: DatosPersonales) {
     this.otroTest.datosPersonales = datosPersonales;
-    console.log(this.otroTest.datosPersonales);
 
   }
   public agregarRespuestas(seleccion: any[]): void {
@@ -38,7 +35,7 @@ export class OtroTestService {
       respuestas.push(element.valor);
     }
     this.otroTest.respuestas = respuestas;
-    console.log(this.otroTest.respuestas);
+    
     
   }
   public obtenerDatosPersonales(): DatosPersonales {

@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { ResultadoService } from '../shared/servicios/resultado.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ProgramasService } from '../shared/servicios/programas.service';
-import { OtroTestService } from '../shared/servicios/otro-test.service';
+
 import { InicioService } from '../shared/servicios/inicio.service';
 import { MotivacionService } from '../shared/servicios/motivacion.service';
+import { AutoContolService } from '../shared/servicios/auto-contol.service';
 
 @Component({
   selector: 'app-datos-personal',
@@ -16,15 +17,19 @@ export class DatosPersonalComponent implements OnInit {
   programas = [];
   habilitarTest:string;
 
-  constructor(private router: Router, private resultadoService: ResultadoService, private progrmasService: ProgramasService,private motivacioService:MotivacionService,private otroTestService:OtroTestService, private inicioService:InicioService) { }
+  constructor(private router: Router, private resultadoService: ResultadoService, private progrmasService: ProgramasService,private motivacioService:MotivacionService,private autoContolService:AutoContolService, private inicioService:InicioService) { }
 
   ngOnInit(): void {
     this.resultadoService.limpiarTodo();
-    this.otroTestService.limpiarTodo();
+    this.autoContolService.limpiarTodo();
+    this.motivacioService.limpiarTodo();
     this.progrmasService.obtenerTodosProgramas().subscribe(data => {
       this.programas = data;
     });
     this.habilitarTest=this.inicioService.habilitarTest();
+    if(!this.habilitarTest){
+      this.router.navigate(['/inicio']);
+    }
   }
   form = new FormGroup({
     nombre: new FormControl('', Validators.required),
@@ -45,7 +50,7 @@ export class DatosPersonalComponent implements OnInit {
     this.router.navigate(['/cuestionario']);
     }
      if (this.habilitarTest=='otro-test'){
-      this.otroTestService.agregarDatosPersonales(this.form.value);
+      this.autoContolService.agregarDatosPersonales(this.form.value);
       this.router.navigate(['/cuestionario-otro']);
     }
      if (this.habilitarTest=='motivacion'){

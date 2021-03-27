@@ -10,6 +10,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { PreguntasComponent } from './otro-test/preguntas/preguntas.component';
 import { ReporteComponent } from './otro-test/reporte/reporte.component';
 import { PreguntasMotivacionComponent } from './preguntas-motivacion/preguntas/preguntas-motivacion/preguntas-motivacion.component';
+import { ReporteMotivacionComponent } from './preguntas-motivacion/reporte/reporte-motivacion/reporte-motivacion.component';
 
 
 
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'reporte-autoYefi',
     component:ReporteComponent
+  },
+  {
+    path: 'reporte-moti',
+    component:ReporteMotivacionComponent
   },
   {
     path:'cuestionario-otro',

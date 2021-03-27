@@ -4,17 +4,21 @@
   <div class="messages-guide" *ngIf="habilitarTest === 'testPersonalidad'">
     <img src="../../assets/imagenes/escudo-uco.png" alt="">
     <p><strong>Bienvenido. <br>
-        Este es un cuestionario que mide 16 rasgos de personalidad (afectividad, razonamiento,
+        Este es un cuestionario que mide 16 rasgos de personalidad del estudiante como afectividad, razonamiento,
         estabilidad, dominancia, conformidad grupal, atrevimiento, sensibilidad, suspicacia
-        imaginación, astucia, culpabilidad, autosuficiencia, autocontrol y tensión). <br>
-        Es importante para la institución que usted diligencie a consciencia este formulario. <br>
-        Al final se te entregará un reporte personalizado con valoraciones de los 16 rasgos de personalidad de
-        acuerdo a tu respuesta. </strong></p>
+        imaginación, astucia, culpabilidad, autosuficiencia, autocontrol y tensión. <br>
+        Es importante para la institución que usted diligencie a consciencia este formulario.  </strong></p>
   </div>
   <div class="messages-guide" *ngIf="habilitarTest === 'otro-test'">
     <img src="../../assets/imagenes/escudo-uco.png" alt="">
     <p><strong>Bienvenido. <br>
-        Este es un cuestionario que mide algunos aspectos congnitivos y racionales de los individuos. <br>
+        Este es un cuestionario que mide algunos aspectos de autoeficacia y autoeficiencia del estudiante. <br>
+        Es importante para la institución que usted diligencie a consciencia este formulario. <br></strong></p>
+  </div>
+  <div class="messages-guide" *ngIf="habilitarTest === 'motivacion'">
+    <img src="../../assets/imagenes/escudo-uco.png" alt="">
+    <p><strong>Bienvenido. <br>
+        Este es un cuestionario que mide algunos aspectos sobre la motivación del aprendizaje. <br>
         Es importante para la institución que usted diligencie a consciencia este formulario. <br></strong></p>
   </div>
   <form [formGroup]="form" (ngSubmit)="submit()">
@@ -23,12 +27,13 @@
       <div class="resaltar">
         <p><strong>**Todos los campos son obligatorios**</strong></p>
       </div>
-      <div class="form-group col-6">
-        <select class="form-control" name="programa" formControlName="programa" required>
+      <div class="md-form">
+        <select class="form-control cont-input-text" name="programa" formControlName="programa" required>
           <option value="" disabled>seleccione el programa </option>
           <option *ngFor="let programas of programas" [value]="programas.descripcion">{{programas.descripcion}}</option>
         </select>
       </div>
+      <br>
       <div class="md-form">
         <input type="text" id="nombre" class="form-control cont-input-text" formControlName="nombre"
           placeholder="Escriba nombres y apellidos">
