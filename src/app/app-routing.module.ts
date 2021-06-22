@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DatosPersonalesGuard } from './shared/guardias/datos-personales.guard';
-import { RespuestasGuard } from './shared/guardias/respuestas.guard';
 import { PreguntasPersonalidadComponent } from './personalidad-componentes/preguntas/preguntas-personalidad/preguntas-personalidad.component';
 import { ResultadoPersonalidadComponent } from './personalidad-componentes/resultado/resultado-personalidad/resultado-personalidad.component';
 import { ReportePersonalidadComponent } from './personalidad-componentes/reporte/reporte-personalidad/reporte-personalidad.component';
 import { DatosPersonalComponent } from './datos-personal/datos-personal.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { PreguntasComponent } from './otro-test/preguntas/preguntas.component';
-import { ReporteComponent } from './otro-test/reporte/reporte.component';
 import { PreguntasMotivacionComponent } from './preguntas-motivacion/preguntas/preguntas-motivacion/preguntas-motivacion.component';
 import { ReporteMotivacionComponent } from './preguntas-motivacion/reporte/reporte-motivacion/reporte-motivacion.component';
+import { ReporteComponent } from './autoeficacia-componentes/reporte/reporte.component';
+import { PreguntasComponent } from './autoeficacia-componentes/preguntas/preguntas.component';
 
 
 
@@ -24,7 +22,7 @@ const routes: Routes = [
     component: DatosPersonalComponent
   },
   {
-    path: 'cuestionario',
+    path: 'cuestionario-personalidad',
     component: PreguntasPersonalidadComponent
   },
   {
@@ -44,7 +42,7 @@ const routes: Routes = [
     component:ReporteMotivacionComponent
   },
   {
-    path:'cuestionario-otro',
+    path:'cuestionario-autoeficacia',
     component:PreguntasComponent
 
   },

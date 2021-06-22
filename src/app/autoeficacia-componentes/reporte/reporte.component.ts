@@ -103,7 +103,7 @@ export class ReporteComponent implements OnInit {
     });
     console.log(this.copia);
     
-    this.excelervice.exportAsExcelFile(this.copia, 'respuestas Test motivacion');
+    this.excelervice.exportAsExcelFile(this.copia, 'respuestas Test autoeficacia y autoeficiencia');
     this.copia=[];
   }
 

@@ -21,10 +21,10 @@ import { DatosPersonalComponent } from './datos-personal/datos-personal.componen
 import { InicioComponent } from './inicio/inicio.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { PreguntasComponent } from './otro-test/preguntas/preguntas.component';
-import { ReporteComponent } from './otro-test/reporte/reporte.component';
 import { PreguntasMotivacionComponent } from './preguntas-motivacion/preguntas/preguntas-motivacion/preguntas-motivacion.component';
 import { ReporteMotivacionComponent } from './preguntas-motivacion/reporte/reporte-motivacion/reporte-motivacion.component';
+import { PreguntasComponent } from './autoeficacia-componentes/preguntas/preguntas.component';
+import { ReporteComponent } from './autoeficacia-componentes/reporte/reporte.component';
 
 @NgModule({
   declarations: [

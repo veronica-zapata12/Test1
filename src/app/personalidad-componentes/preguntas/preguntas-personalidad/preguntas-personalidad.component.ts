@@ -2,12 +2,13 @@ import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { Preguntas } from 'src/app/shared/modelos/preguntas';
 import { Router } from '@angular/router';
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ResultadoService } from 'src/app/shared/servicios/resultado.service';
+
 import { PreguntasService } from 'src/app/shared/servicios/preguntas.service';
 import { CalculosService } from 'src/app/shared/servicios/calculos.service';
 import { TablaMujeresService } from 'src/app/shared/servicios/tabla-mujeres.service';
 import { TablaHombresService } from 'src/app/shared/servicios/tabla-hombres.service';
 import { InicioService } from 'src/app/shared/servicios/inicio.service';
+import { PersonalidadService } from 'src/app/shared/servicios/personalidad.service';
 
 @Component({
   selector: 'app-preguntas-personalidad',
@@ -18,7 +19,7 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
   @ViewChild('content') contenidoDelModal;
   ngAfterViewInit() {
     window.scrollTo(0, 0);
-    if(this.resultadoService.obtenerDatosPersonales()){
+    if(this.personalidadService.obtenerDatosPersonales()){
       this.open();
     }
   }
@@ -53,7 +54,7 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
 
 
   constructor(private router: Router, private config: NgbModalConfig, private modalService: NgbModal,
-    private preguntasService: PreguntasService, private resultadoService: ResultadoService,
+    private preguntasService: PreguntasService, private personalidadService: PersonalidadService,
     private calculoService: CalculosService, public tablaMujeresService: TablaMujeresService,
     public tablaHombresService: TablaHombresService,private inicioService:InicioService
   ) {
@@ -68,7 +69,7 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
     this.preguntasService.consultarPreguntasPersonalidad().subscribe(data => {
       this.preguntas = data;
     });
-    if(!this.resultadoService.obtenerDatosPersonales()){
+    if(!this.personalidadService.obtenerDatosPersonales()){
       this.router.navigate(['/inicio']);
     }
   }
@@ -114,7 +115,7 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
   }
 
   enviar() {
-    this.resultadoService.agregarRespuestas(this.respuestas);
+    this.personalidadService.agregarRespuestas(this.respuestas);
     /*
     CALCULA LAS VARIABLES A,B,C.... PARA EL PD
     FALTA PONER EL CONDICIONAL PARA EL GENERO */
@@ -142,7 +143,7 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
     this.PD.push(this.AparaPd, this.BparaPd, this.CparaPd, this.EparaPd, this.FparaPd, this.GparaPd, this.HparaPd, this.IparaPd, this.LparaPd,
       this.MparaPd, this.NparaPd, this.OparaPd, this.Q1paraPd, this.Q2paraPd, this.Q3paraPd, this.Q4paraPd, this.MIparaPd, this.INparaPd, this.QAparaPd)
 
-    if (this.resultadoService.obtenerDatosPersonales().genero === "M") {
+    if (this.personalidadService.obtenerDatosPersonales().genero === "M") {
 
       this.PE.push(this.tablaHombresService.calcularA(this.AparaPd));
       this.PE.push(this.tablaHombresService.calcularB(this.BparaPd));
@@ -190,9 +191,9 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
     /**
      * METODOS PARA LLEVAR A AGUARDAR LOS DATOS 
      */
-    this.resultadoService.agregarPD(this.PD);
-    this.resultadoService.agregarPE(this.PE)
-    this.resultadoService.enviar();
+    this.personalidadService.agregarPD(this.PD);
+    this.personalidadService.agregarPE(this.PE)
+    this.personalidadService.enviar();
     this.router.navigate(['/resultado']);
   }
 }

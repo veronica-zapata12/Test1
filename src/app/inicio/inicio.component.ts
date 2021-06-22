@@ -1,10 +1,10 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { ResultadoService } from '../shared/servicios/resultado.service';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 import { InicioService } from '../shared/servicios/inicio.service';
 import { AutoContolService } from '../shared/servicios/auto-contol.service';
 import { MotivacionService } from '../shared/servicios/motivacion.service';
+import { PersonalidadService } from '../shared/servicios/personalidad.service';
 
 @Component({
   selector: 'app-inicio',
@@ -18,14 +18,14 @@ export class InicioComponent implements OnInit , AfterViewInit {
     this.abrirModal();
   }
   habilitarContenido:boolean;
-  constructor(private router: Router,private inicioService:InicioService, private resultadoService:ResultadoService, private autocotrolService:AutoContolService, private motivacionService:MotivacionService,private modalService: NgbModal, private config: NgbModalConfig) {
+  constructor(private router: Router,private inicioService:InicioService, private personalidadService:PersonalidadService, private autocotrolService:AutoContolService, private motivacionService:MotivacionService,private modalService: NgbModal, private config: NgbModalConfig) {
     config.backdrop = 'static';
     config.keyboard = false;
    }
   
   ngOnInit(): void {
     this.inicioService.limpiarTodo();
-    this.resultadoService.limpiarTodo();
+    this.personalidadService.limpiarTodo();
     this.autocotrolService.limpiarTodo();
     this.motivacionService.limpiarTodo();
 

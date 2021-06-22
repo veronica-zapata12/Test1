@@ -3,9 +3,9 @@ import { Respuestas } from '../modelos/respuestas';
 import { DatosPersonales } from '../modelos/datos-personales';
 import { AngularFirestoreCollection, AngularFirestore } from '@angular/fire/firestore';
 @Injectable({
-  providedIn: 'root'
-})
-export class ResultadoService {
+    providedIn: 'root'
+  })
+export class PersonalidadService {
   private resultado: Respuestas = {
     datosPersonales: null,
     respuestas: null,
@@ -15,7 +15,7 @@ export class ResultadoService {
   };
 
 
-  private readonly nombreColeccion = 'resultado';
+  private readonly nombreColeccion = 'resultado personalidad';
 
 
   private coleccionResultado: AngularFirestoreCollection<Respuestas>;
