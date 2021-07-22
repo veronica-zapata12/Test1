@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { PersonalidadService } from 'src/app/shared/servicios/personalidad.service';
+import { DatosPersonales } from 'src/app/shared/modelos/datos-personales';
 
 @Component({
   selector: 'app-resultado-personalidad',
@@ -7,13 +8,15 @@ import { PersonalidadService } from 'src/app/shared/servicios/personalidad.servi
   styleUrls: ['./resultado-personalidad.component.sass']
 })
 export class ResultadoPersonalidadComponent implements OnInit, AfterViewInit {
-
+  public persona:DatosPersonales;
   public clasificacionPE = [];
   public descripciondelPE = [];
 
   constructor(private personalidadService:PersonalidadService) { }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
+    this.persona=this.personalidadService.obtenerDatosPersonales();
     this.clasificacionPE = this.personalidadService.obtenerPE();
     this.analisis();
   }

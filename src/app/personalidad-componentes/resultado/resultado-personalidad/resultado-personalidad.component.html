@@ -4,7 +4,15 @@
 <h4 class="centrar">Resultados del Test de personalidad</h4>
 
 <div class="container">
-    <a href="/inicio">&laquo; volver al inicio</a><br>
+    
+    <div class="messages-guide">
+     <img src="../../assets/imagenes/escudo-uco.png" alt="">
+    <p>
+         Hola <strong>{{persona.nombre}} </strong> este es un breve análisis de su personalidad basado las respuestas dadas
+    </p>
+</div>
+<br>
+<a href="/inicio">&laquo; volver al inicio</a><br>
     <table *ngIf="clasificacionPE.length" class="table table-striped" border="2">
         <thead>
             <tr>
