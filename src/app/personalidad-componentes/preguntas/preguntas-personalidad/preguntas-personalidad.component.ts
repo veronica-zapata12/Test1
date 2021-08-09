@@ -27,10 +27,10 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
   /* ARREGLOS PARA LAS PREGUNTAS, RESPUESTAS, PD Y PE */
   public preguntas: Preguntas[];
   respuestas = [];
-  respuestasCalculos = [];
+  respuestasCalculos:number[] = [];
   paginaActual = 1;
-  PD = [];
-  PE = [];
+  PD:number[]= [];
+  PE:number[] = [];
   /* ESTAS SON LAS VARIABLES PARA CALCULAR EL PD*/
   AparaPd: number;
   BparaPd: number;
@@ -116,9 +116,10 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
 
   enviar() {
     this.personalidadService.agregarRespuestas(this.respuestas);
+    
     /*
     CALCULA LAS VARIABLES A,B,C.... PARA EL PD
-    FALTA PONER EL CONDICIONAL PARA EL GENERO */
+   */
     this.AparaPd = this.calculoService.calcularAenPd(this.respuestasCalculos);
     this.BparaPd = this.calculoService.calcularBenPd(this.respuestasCalculos);
     this.CparaPd = this.calculoService.calcularCenPd(this.respuestasCalculos);
@@ -143,6 +144,7 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
     this.PD.push(this.AparaPd, this.BparaPd, this.CparaPd, this.EparaPd, this.FparaPd, this.GparaPd, this.HparaPd, this.IparaPd, this.LparaPd,
       this.MparaPd, this.NparaPd, this.OparaPd, this.Q1paraPd, this.Q2paraPd, this.Q3paraPd, this.Q4paraPd, this.MIparaPd, this.INparaPd, this.QAparaPd)
 
+      /* calculos de PE dependiendo del genero*/
     if (this.personalidadService.obtenerDatosPersonales().genero === "M") {
 
       this.PE.push(this.tablaHombresService.calcularA(this.AparaPd));
@@ -164,8 +166,7 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
       this.PE.push(this.tablaHombresService.calcularMI(this.MIparaPd));
       this.PE.push(this.tablaHombresService.calcularIN(this.INparaPd));
       this.PE.push(this.tablaHombresService.calcularQA(this.QAparaPd));
-      //console.log(this.PE);
-      //console.log(this.PD)
+      
     } else {
       this.PE.push(this.tablaMujeresService.calcularA(this.AparaPd));
       this.PE.push(this.tablaMujeresService.calcularB(this.BparaPd));

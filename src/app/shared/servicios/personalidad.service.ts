@@ -43,10 +43,10 @@ export class PersonalidadService {
   public obtenerDatosPersonales(): DatosPersonales {
     return this.resultado.datosPersonales;
   }
-  public obtenerPE(): any[] {
+  public obtenerPE(): number[] {
     return this.resultado.PE
   }
-  public onbtenerRespuestas(): any[] {
+  public obtenerRespuestas(): number[] {
     return this.resultado.respuestas
   }
 

@@ -131,6 +131,10 @@
         </div>
 
       </div>
+      <div *ngIf="respuestas.length === 20 || respuestas.length === 40 || respuestas.length === 60 || respuestas.length === 80 || respuestas.length === 100 || respuestas.length === 120 || respuestas.length === 140 || respuestas.length === 160 || respuestas.length === 180">
+        <pagination-controls  (pageChange)="paginaActual = $event" previousLabel="Anterior" nextLabel="Siguiente"
+          (click)="iniciar()"></pagination-controls>
+        </div>
       <div class="respuestas-info">
         <P><STRONg>RECUERDE QUE DEBE RESPONDER TODAS LAS PREGUNTAS EN ORDEN POR QUE ESTO PUEDE AFECTAR LOS RESULTADOS
             DEL TEST</STRONg></P>
@@ -139,9 +143,6 @@
          <button *ngIf="respuestas.length === 185" class="btn btns-primary" type="submit" (click)="enviar()">Enviar</button>
       </div>
      
-      <pagination-controls (pageChange)="paginaActual = $event" previousLabel="Anterior" nextLabel="Siguiente"
-        (click)="iniciar()"></pagination-controls>
-      
 
     </div>
   </section>

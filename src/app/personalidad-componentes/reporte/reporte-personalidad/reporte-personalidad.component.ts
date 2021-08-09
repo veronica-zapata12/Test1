@@ -501,8 +501,7 @@ export class ReportePersonalidadComponent implements OnInit {
       this.copia.push(copia1)
 
     });
-    console.log(this.copia);
-
+    
     this.excelervice.exportAsExcelFile(this.copia, 'respuestas test personalidad');
     this.copia = [];
   }

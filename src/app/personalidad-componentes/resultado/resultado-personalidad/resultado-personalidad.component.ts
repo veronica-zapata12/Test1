@@ -23,7 +23,7 @@ export class ResultadoPersonalidadComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.personalidadService.limpiarTodo();
   }
-
+/** analiza los valores de PE calculados y */
   analisis() {
     if (this.clasificacionPE[0] < 5) {
       this.descripciondelPE.push("Fría, impersonal, distante");

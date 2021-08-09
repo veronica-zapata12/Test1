@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class CalculosService {
 
   constructor() { }
-  public calcularAenPd(lista:any[]):number{
+  public calcularAenPd(lista:number[]):number{
     let suma:number=0
     if(lista[0]>0){
       suma=suma+(lista[0]-1);
@@ -45,7 +45,7 @@ export class CalculosService {
 return suma
 
   }
-  public calcularBenPd(lista:any[]):number{
+  public calcularBenPd(lista:number[]):number{
     let suma:number=0
     if(lista[170]==1){
       suma=suma+1;
@@ -95,7 +95,7 @@ return suma
 return suma
 
   }
-  public calcularCenPd(lista:any[]):number{
+  public calcularCenPd(lista:number[]):number{
     let suma:number=0
     if(lista[31]>0){
       suma=suma+(lista[31]-1);
@@ -130,7 +130,7 @@ return suma
 return suma
 
   }
-  public calcularEenPd(lista:any[]):number{
+  public calcularEenPd(lista:number[]):number{
     let suma:number=0
     if(lista[101]>0){
       suma=suma+(lista[101]-1);
@@ -165,7 +165,7 @@ return suma
 return suma
 
   }
-  public calcularFenPd(lista:any[]):number{
+  public calcularFenPd(lista:number[]):number{
     let suma:number=0
     if(lista[5]>0){
       suma=suma+(lista[5]-1);
@@ -200,7 +200,7 @@ return suma
 return suma
 
   }
-  public calcularGenPd(lista:any[]):number{
+  public calcularGenPd(lista:number[]):number{
     let suma:number=0
     if(lista[71]>0){
       suma=suma+(lista[71]-1);
@@ -238,7 +238,7 @@ return suma
 return suma
 
   }
-  public calcularHenPd(lista:any[]):number{
+  public calcularHenPd(lista:number[]):number{
     let suma:number=0
     if(lista[40]>0){
       suma=suma+(lista[40]-1);
@@ -273,7 +273,7 @@ return suma
 return suma
 
   }
-  public calcularIenPd(lista:any[]):number{
+  public calcularIenPd(lista:number[]):number{
     let suma:number=0
     if(lista[6]>0){
       suma=suma+(lista[8]-1);
@@ -311,7 +311,7 @@ return suma
 return suma
 
   }
-  public calcularLenPd(lista:any[]):number{
+  public calcularLenPd(lista:number[]):number{
     let suma:number=0
     if(lista[44]>0){
       suma=suma+(lista[44]-1);
@@ -346,7 +346,7 @@ return suma
 return suma
 
   }
-  public calcularMenPd(lista:any[]):number{
+  public calcularMenPd(lista:number[]):number{
     let suma:number=0
     if(lista[16]>0){
       suma=suma+(lista[16]-1);
@@ -384,7 +384,7 @@ return suma
 return suma
 
   }
-  public calcularNenPd(lista:any[]):number{
+  public calcularNenPd(lista:number[]):number{
     let suma:number=0
     if(lista[14]>0){
       suma=suma+(lista[14]-1);
@@ -419,7 +419,7 @@ return suma
 return suma
 
   }
-  public calcularOenPd(lista:any[]):number{
+  public calcularOenPd(lista:number[]):number{
     let suma:number=0
     if(lista[18]>0){
       suma=suma+(lista[18]-1);
@@ -454,7 +454,7 @@ return suma
 return suma
 
   }
-  public calcularQ1enPd(lista:any[]):number{
+  public calcularQ1enPd(lista:number[]):number{
     let suma:number=0
     if(lista[23]>0){
       suma=suma+(lista[23]-1);
@@ -502,7 +502,7 @@ return suma
 return suma
 
   }
-  public calcularQ2enPd(lista:any[]):number{
+  public calcularQ2enPd(lista:number[]):number{
     let suma:number=0
     if(lista[24]>0){
       suma=suma+(lista[24]-1);
@@ -538,7 +538,7 @@ return suma
 return suma
 
   }
-  public calcularQ3enPd(lista:any[]):number{
+  public calcularQ3enPd(lista:number[]):number{
     let suma:number=0
     if(lista[25]>0){
       suma=suma+(lista[25]-1);
@@ -574,7 +574,7 @@ return suma
 return suma
 
   }
-  public calcularQ4enPd(lista:any[]):number{
+  public calcularQ4enPd(lista:number[]):number{
     let suma:number=0
     if(lista[59]>0){
       suma=suma+(lista[59]-1);
@@ -609,7 +609,7 @@ return suma
 return suma
 
   }
-  public calcularMIenPd(lista:any[]):number{
+  public calcularMIenPd(lista:number[]):number{
     let suma:number=0
     if(lista[17]>0){
       suma=suma+(lista[17]-1);
@@ -650,7 +650,7 @@ return suma
 return suma
 
   }
-  public calcularINenPd(lista:any[]):number{
+  public calcularINenPd(lista:number[]):number{
     let suma:number=0
     if(lista[6]==2){
       suma=suma+1;
@@ -769,7 +769,7 @@ return suma
 return suma
 
   }
-  public calcularQAenPd(lista:any[]):number{
+  public calcularQAenPd(lista:number[]):number{
     let suma:number=0
     if(lista[1]==1){
       suma=suma+1;

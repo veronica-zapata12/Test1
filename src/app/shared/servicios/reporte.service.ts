@@ -24,11 +24,7 @@ export class ReporteService {
     private coleccionResultadoEncuestaAutocontrol: AngularFirestoreCollection<RespuestasAutoControl>;
     private coleccionResultadoEncuestaMotivacionTest: AngularFirestoreCollection<RespuestasMotivacion>;
 
-    /**
-     * constructor
-     * @param afs servicio http firebase asincrono para consulta de las diferentes categorías de hitos
-     * @param ordenamientoService servicio para ordenamiento de arreglos
-     */
+    
     constructor(afs: AngularFirestore) {
         this.coleccionResultadoEncuesta = afs.collection<Respuestas>(this.nombreColeccion);
         this.coleccionResultadoEncuestaAutocontrol = afs.collection<RespuestasAutoControl>(this.nombreColeccionAutocontrol);
@@ -37,7 +33,7 @@ export class ReporteService {
 
 
     /**
-     * Obtiene todas las respuestas de la encuesta
+     * Obtiene todas las respuestas del test de personalidad
      */
     obtenerTodos(): Observable<Respuestas[]> {
       return this.coleccionResultadoEncuesta.valueChanges();
@@ -45,13 +41,13 @@ export class ReporteService {
 
     
     /**
-     * Obtiene todas las respuestas de la encuesta
+     * Obtiene todas las respuestas del test de autocontrol
      */
     obtenerTodosAutocontrol(): Observable<RespuestasAutoControl[]> {
       return this.coleccionResultadoEncuestaAutocontrol.valueChanges();
     }
       /**
-     * Obtiene todas las respuestas de la encuesta
+     * Obtiene todas las respuestas del test de motivacion
      */
     obtenerTodosMotivacionTest(): Observable<RespuestasMotivacion[]> {
       return this.coleccionResultadoEncuestaMotivacionTest.valueChanges();

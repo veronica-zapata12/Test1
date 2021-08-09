@@ -38,17 +38,21 @@
         <input type="text" id="nombre" class="form-control cont-input-text" formControlName="nombre"
           placeholder="Escriba nombres y apellidos">
       </div>
-      <div *ngIf="f.nombre.touched && f.nombre.invalid" class="alert alert-danger">
+      <div class="cont-input-text">
+      <div  *ngIf="f.nombre.touched && f.nombre.invalid" class="alert alert-danger ">
         <div *ngIf="f.nombre.errors.required">el nombre es requerido.</div>
       </div>
+    </div>
       <br>
       <div class="md-form">
         <input type="text" id="documento" class="form-control cont-input-text" formControlName="documento"
           placeholder="Escriba el número del documento">
       </div>
+      <div class="cont-input-text">
       <div *ngIf="f.documento.touched && f.documento.invalid" class="alert alert-danger">
         <div *ngIf="f.documento.errors.required">el documento es requerido.</div>
       </div>
+    </div>
       <br>
       <div class="form-group">
         <label for="genero"> <strong>Género</strong></label>
@@ -60,9 +64,11 @@
           <input id="mujer" type="radio" value="F" name="genero" formControlName="genero">
           <label for="mujer">Femenino</label>
         </div>
+        <div class="cont-input-text">
         <div *ngIf="f.genero.touched && f.genero.invalid" class="alert alert-danger">
           <div *ngIf="f.genero.errors.required">el género es requerido.</div>
         </div>
+      </div>
       </div>
       <button class="btn btns-primary" [disabled]="!form.valid"><strong>Continuar</strong> </button>
     </div>
