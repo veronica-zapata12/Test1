@@ -61,6 +61,10 @@ export class PreguntasMotivacionComponent  implements OnInit , AfterViewInit {
     } else {
       this.respuestasSelecionadas.push(respuestaCopia);
     }
+     //para que haga scroll hacia abajo cuando se habiliten las opciones del paginador o el boton de enviar
+     if(this.respuestasSelecionadas.length===24 ||this.respuestasSelecionadas.length===46){
+      window.scrollTo(0, 400000);
+    }
 
   }
   /**

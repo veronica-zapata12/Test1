@@ -26,7 +26,6 @@ export class PersonalidadService {
 
   public agregarDatosPersonales(datosPersonales: DatosPersonales) {
     this.resultado.datosPersonales = datosPersonales;
-    console.log(this.resultado.datosPersonales);
 
   }
 

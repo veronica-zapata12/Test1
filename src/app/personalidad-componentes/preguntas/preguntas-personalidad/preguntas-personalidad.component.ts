@@ -102,6 +102,10 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
       this.respuestasCalculos.push(respuestaCopia.valor);
 
     }
+//para que haga scroll hacia abajo cuando se habiliten las opciones del paginador o el boton de enviar
+    if(this.respuestas.length===20|| this.respuestas.length === 40 || this.respuestas.length === 60 || this.respuestas.length === 80 || this.respuestas.length === 100 || this.respuestas.length === 120 || this.respuestas.length === 140 || this.respuestas.length === 160 || this.respuestas.length === 180 || this.respuestas.length===185){
+      window.scrollTo(0, 40000);
+    }
 
   }
   /**

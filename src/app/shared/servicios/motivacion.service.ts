@@ -20,13 +20,12 @@ export class MotivacionService {
 
   private coleccionResultado: AngularFirestoreCollection<RespuestasMotivacion>;
 
-  private habilitar:boolean;
+ 
   constructor(afs: AngularFirestore) {
     this.coleccionResultado = afs.collection<RespuestasMotivacion>(this.nombreColeccion);
   }
   public agregarDatosPersonales(datosPersonales: DatosPersonales) {
     this.motivacionTest.datosPersonales = datosPersonales;
-    //console.log(this.motivacionTest.datosPersonales);
 
   }
   public agregarRespuestas(seleccion: any[]): void {
@@ -37,7 +36,6 @@ export class MotivacionService {
       respuestas.push(element.valor);
     }
     this.motivacionTest.respuestas = respuestas;
-    //console.log(this.motivacionTest.respuestas);
     
   }
   public obtenerDatosPersonales(): DatosPersonales {

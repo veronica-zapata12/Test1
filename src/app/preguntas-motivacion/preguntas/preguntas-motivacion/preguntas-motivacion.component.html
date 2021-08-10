@@ -49,18 +49,25 @@
               {{item}}
             </mat-button-toggle>
           </mat-button-toggle-group>
-        <div class="labels">
-          <div class="label-left">Totalmente en desacuerdo</div>
-          <div class="label-right">Totalmente de acuerdo</div>
+        <div >
+          <label class="label-left">Totalmente en desacuerdo</label><label class="label-right">Totalmente de acuerdo</label>
         </div>
         </div>
 
       </div>
-      <div class="col text-center">
-      <button *ngIf="respuestasSelecionadas.length === 46" class="btn btns-primary"  type="submit" (click)="enviar()">Enviar</button>
+      
+      <div class="col text-center" *ngIf="respuestasSelecionadas.length===24">
       <pagination-controls (pageChange)="paginaActual = $event" previousLabel="Anterior" nextLabel="Siguiente"
       (click)="iniciar()"></pagination-controls>
     </div>
+    <div class="col text-center">
+      <button *ngIf="respuestasSelecionadas.length === 46" class="btn btns-primary"  type="submit" (click)="enviar()">Enviar</button>
+    </div>
+    <div class="respuestas-info">
+      <P><STRONg>RECUERDE QUE DEBE RESPONDER TODAS LAS PREGUNTAS EN ORDEN POR QUE ESTO PUEDE AFECTAR LOS RESULTADOS
+          DEL TEST</STRONg></P>
+    </div>
+    
   </div>
   </section>
 </div>

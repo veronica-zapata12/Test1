@@ -120,19 +120,20 @@
 
         <div>
           <br>
-          <mat-button-toggle-group #res="matButtonToggleGroup"
+          <mat-button-toggle-group #res="matButtonToggleGroup" 
             *ngFor="let item of pregunta.respuestas; let indice = index">
-            <mat-button-toggle class="chip"
+            <mat-button-toggle class="chip" 
               [ngClass]="esRespuestaSeleccionado(indice + 1, pregunta.orden) ? 'chip-hito-select' : 'chip'"
               (click)="agregar(indice + 1, pregunta.orden)">
-              {{indice+1}} {{item}}
+              {{indice+1}}  {{item}}
             </mat-button-toggle>
           </mat-button-toggle-group>
         </div>
 
       </div>
       <div *ngIf="respuestas.length === 20 || respuestas.length === 40 || respuestas.length === 60 || respuestas.length === 80 || respuestas.length === 100 || respuestas.length === 120 || respuestas.length === 140 || respuestas.length === 160 || respuestas.length === 180">
-        <pagination-controls  (pageChange)="paginaActual = $event" previousLabel="Anterior" nextLabel="Siguiente"
+        <pagination-controls (pageChange)="paginaActual = $event" 
+        previousLabel="Anterior" nextLabel="Siguiente"
           (click)="iniciar()"></pagination-controls>
         </div>
       <div class="respuestas-info">

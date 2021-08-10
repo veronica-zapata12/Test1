@@ -52,10 +52,10 @@ export class PreguntasComponent implements OnInit , AfterViewInit {
 
     if (this.respuestasSelecionadas[orden - 1]) {
       this.respuestasSelecionadas.splice(orden - 1, 1, respuestaCopia);
-      //this.respuestasCalculos.splice(orden - 1, 1, respuestaCopia.valor)
     } else {
       this.respuestasSelecionadas.push(respuestaCopia);
     }
+   
 
   }
   /**

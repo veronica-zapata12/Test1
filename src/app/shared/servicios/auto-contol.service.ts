@@ -7,7 +7,7 @@ import { AngularFirestoreCollection, AngularFirestore } from '@angular/fire/fire
   providedIn: 'root'
 })
 export class AutoContolService {
-  private otroTest:RespuestasAutoControl={
+  private autoControlTest:RespuestasAutoControl={
     datosPersonales: null,
     fecha:null,
     respuestas:null
@@ -24,7 +24,7 @@ export class AutoContolService {
     this.coleccionResultado = afs.collection<RespuestasAutoControl>(this.nombreColeccion);
   }
   public agregarDatosPersonales(datosPersonales: DatosPersonales) {
-    this.otroTest.datosPersonales = datosPersonales;
+    this.autoControlTest.datosPersonales = datosPersonales;
 
   }
   public agregarRespuestas(seleccion: any[]): void {
@@ -34,22 +34,22 @@ export class AutoContolService {
       element = seleccion[i];
       respuestas.push(element.valor);
     }
-    this.otroTest.respuestas = respuestas;
+    this.autoControlTest.respuestas = respuestas;
     
     
   }
   public obtenerDatosPersonales(): DatosPersonales {
-    return this.otroTest.datosPersonales;
+    return this.autoControlTest.datosPersonales;
   }
   public limpiarTodo(){
-  this.otroTest={
+  this.autoControlTest={
     datosPersonales: null,
     fecha:null,
     respuestas:null
   };
 }
 public enviar(): Promise<any> {
-  this.otroTest.fecha = new Date().toString().substring(0, 15);
-  return this.coleccionResultado.add(this.otroTest);
+  this.autoControlTest.fecha = new Date().toString().substring(0, 15);
+  return this.coleccionResultado.add(this.autoControlTest);
 }
 }
