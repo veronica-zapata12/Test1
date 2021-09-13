@@ -2,7 +2,7 @@
 <div class="container">
     <section class="ventana-emergente">
         <ng-template #content let-c="close" let-d="dismiss" class="template">
-          <div class="modal-header">
+          <div class="modal-header bg-info text-white">
             <h4 class="modal-title" id="modal-basic-title"><strong>CONSENTIMIENTO INFORMADO</strong></h4>
             
            
@@ -44,9 +44,9 @@
             Dale click al el test que desea realizar
         </p>
     <div style="text-align: center;" class="col-auto">
-        <button type="button"  (click)="elegirTest('testPersonalidad')" class="chip btn-outline-dark">Test de Personalidad</button>
-        <button type="button"  (click)="elegirTest('otro-test')" class="chip btn-outline-dark"> Test de Autoeficacia y Autoeficiencia</button>
-        <button type="button"  (click)="elegirTest('motivacion')" class="chip btn-outline-dark"> Test de Motivación del Aprendizaje</button>
+        <button type="button"  (click)="elegirTest('testPersonalidad')" class="chip btn-outline-dark"> <i class="fas fa-universal-access" style="font-size: 25px;"></i> Test de Personalidad</button>
+        <button type="button"  (click)="elegirTest('otro-test')" class="chip btn-outline-dark"><i class="fas fa-clipboard-list-check" style="font-size: 25px;"></i> Test de Autoeficacia y Autoeficiencia</button>
+        <button type="button"  (click)="elegirTest('motivacion')" class="chip btn-outline-dark"><i class="fas fa-users-class" style="font-size: 25px;"></i> Test de Motivación del Aprendizaje</button>
       </div>
 </section>
 <section  *ngIf="habilitarContenido == false">
@@ -55,8 +55,9 @@
         para poder acceder a la información
     </div>
     <div style="text-align: center;">
-    <a href="/inicio" ><img style="width: 30%; "  src="../../../assets/imagenes/actualizar-pagina.jpg"  alt=""></a><br>
-    <label for="">Haz click para recargar</label>
+    <a href="/inicio" ><i class="fas fa-sync " style="font-size: 200px;"></i></a>
+    <br> 
+    <label for="">Haz click en la imagen para recargar</label>
 </div>
 
 </section>

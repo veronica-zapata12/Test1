@@ -1,77 +1,109 @@
 <app-header></app-header>
+<section>
+  <div class="container">
 
-<div class="container">
-  <div class="messages-guide" *ngIf="habilitarTest === 'testPersonalidad'">
-    <img src="../../assets/imagenes/escudo-uco.png" alt="">
-    <p><strong>Bienvenido. <br>
-        Este es un cuestionario que mide 16 rasgos de personalidad del estudiante como afectividad, razonamiento,
-        estabilidad, dominancia, conformidad grupal, atrevimiento, sensibilidad, suspicacia
-        imaginación, astucia, culpabilidad, autosuficiencia, autocontrol y tensión. <br>
-        Es importante para la institución que usted diligencie a consciencia este formulario.  </strong></p>
-  </div>
-  <div class="messages-guide" *ngIf="habilitarTest === 'otro-test'">
-    <img src="../../assets/imagenes/escudo-uco.png" alt="">
-    <p><strong>Bienvenido. <br>
-        Este es un cuestionario que mide algunos aspectos de autoeficacia y autoeficiencia del estudiante. <br>
-        Es importante para la institución que usted diligencie a consciencia este formulario. <br></strong></p>
-  </div>
-  <div class="messages-guide" *ngIf="habilitarTest === 'motivacion'">
-    <img src="../../assets/imagenes/escudo-uco.png" alt="">
-    <p><strong>Bienvenido. <br>
-        Este es un cuestionario que mide algunos aspectos sobre la motivación del aprendizaje. <br>
-        Es importante para la institución que usted diligencie a consciencia este formulario. <br></strong></p>
-  </div>
-  <form [formGroup]="form" (ngSubmit)="submit()">
-    <div class="contenido">
-      <h2>Datos Personales</h2>
-      <div class="resaltar">
-        <p><strong>**Todos los campos son obligatorios**</strong></p>
-      </div>
-      <div class="md-form">
-        <select class="form-control cont-input-text" name="programa" formControlName="programa" required>
-          <option value="" disabled>seleccione el programa </option>
-          <option *ngFor="let programas of programas" [value]="programas.descripcion">{{programas.descripcion}}</option>
-        </select>
-      </div>
-      <br>
-      <div class="md-form">
-        <input type="text" id="nombre" class="form-control cont-input-text" formControlName="nombre"
-          placeholder="Escriba nombres y apellidos">
-      </div>
-      <div class="cont-input-text">
-      <div  *ngIf="f.nombre.touched && f.nombre.invalid" class="alert alert-danger ">
-        <div *ngIf="f.nombre.errors.required">el nombre es requerido.</div>
-      </div>
+    <div class="messages-guide" *ngIf="habilitarTest === 'testPersonalidad'">
+      <img src="../../assets/imagenes/escudo-uco.png" alt="">
+      <p><strong>Bienvenido. <br>
+          Este es un cuestionario que mide 16 rasgos de personalidad del estudiante como afectividad, razonamiento,
+          estabilidad, dominancia, conformidad grupal, atrevimiento, sensibilidad, suspicacia
+          imaginación, astucia, culpabilidad, autosuficiencia, autocontrol y tensión. <br>
+          Es importante para la institución que usted diligencie a consciencia este formulario. </strong></p>
     </div>
-      <br>
-      <div class="md-form">
-        <input type="text" id="documento" class="form-control cont-input-text" formControlName="documento"
-          placeholder="Escriba el número del documento">
-      </div>
-      <div class="cont-input-text">
-      <div *ngIf="f.documento.touched && f.documento.invalid" class="alert alert-danger">
-        <div *ngIf="f.documento.errors.required">el documento es requerido.</div>
-      </div>
+    <div class="messages-guide" *ngIf="habilitarTest === 'otro-test'">
+      <img src="../../assets/imagenes/escudo-uco.png" alt="">
+      <p><strong>Bienvenido. <br>
+          Este es un cuestionario que mide algunos aspectos de autoeficacia y autoeficiencia del estudiante. <br>
+          Es importante para la institución que usted diligencie a consciencia este formulario. <br></strong></p>
     </div>
-      <br>
-      <div class="form-group">
-        <label for="genero"> <strong>Género</strong></label>
-        <div>
-          <input id="hombre" type="radio" value="M" name="genero" formControlName="genero">
-          <label for="hombre">Masculino</label>
-        </div>
-        <div>
-          <input id="mujer" type="radio" value="F" name="genero" formControlName="genero">
-          <label for="mujer">Femenino</label>
-        </div>
-        <div class="cont-input-text">
-        <div *ngIf="f.genero.touched && f.genero.invalid" class="alert alert-danger">
-          <div *ngIf="f.genero.errors.required">el género es requerido.</div>
-        </div>
-      </div>
-      </div>
-      <button class="btn btns-primary" [disabled]="!form.valid"><strong>Continuar</strong> </button>
+    <div class="messages-guide" *ngIf="habilitarTest === 'motivacion'">
+      <img src="../../assets/imagenes/escudo-uco.png" alt="">
+      <p><strong>Bienvenido. <br>
+          Este es un cuestionario que mide algunos aspectos sobre la motivación del aprendizaje. <br>
+          Es importante para la institución que usted diligencie a consciencia este formulario. <br></strong></p>
     </div>
-  </form>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <div class="row">
+      <div class="card ">
+        <div class="card-header">
+          <h2> <i class="fas fa-user"></i> Datos Personales</h2>
+        </div>
+        <div class="resaltar">
+          <p><strong>**Todos los campos son obligatorios**</strong></p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <select class="form-control cont-input-text" name="programa" formControlName="programa" required>
+              <option value="" disabled>seleccione el programa </option>
+              <option *ngFor="let programas of programas" [value]="programas.descripcion">{{programas.descripcion}}
+              </option>
+            </select>
+          </div>
+          
+            <div *ngIf="f.programa.touched && f.programa.invalid" class="alert alert-danger ">
+              <div>el programa es requerido.</div>
+            </div>
+         
 
-</div>
+          <div class="form-group">
+            <input type="text" id="nombre" class="form-control cont-input-text" formControlName="nombre"
+              placeholder="Escriba nombres y apellidos">
+          </div>
+          
+            <div *ngIf="f.nombre.touched && f.nombre.invalid" class="alert alert-danger ">
+              <div *ngIf="f.nombre.errors?.required">el nombre es requerido.</div>
+              <div *ngIf="f.nombre.errors?.pattern " class="alert alert-danger">
+                el nombre sólo debe tener letras, sin números, ni comas(,), ni puntos(.). 
+               </div>
+            </div>
+         
+
+          <div class="form-group">
+            <input type="text" id="documento" class="form-control cont-input-text" formControlName="documento"
+              placeholder="Escriba el número del documento">
+          </div>
+          
+            <div *ngIf="f.documento.touched && f.documento.invalid" class="alert alert-danger">
+              <div *ngIf="f.documento.errors?.required">el documento es requerido.</div>
+              <div *ngIf="f.documento.errors?.minlength " class="alert alert-danger">
+                el documento debe tener minimo 5 números.
+               </div>
+              <div *ngIf="f.documento.errors?.maxlength " class="alert alert-danger">
+                el documento debe tener máximo 20 números.
+               </div>
+              <div *ngIf="f.documento.errors?.pattern " class="alert alert-danger">
+               el documento no debería espacios, ni comas(,), ni puntos(.). 
+              </div>
+              </div>
+          
+
+          <div class="form-group">
+            <label for="genero"> <strong>Género</strong></label>
+            <div>
+              <input id="hombre" type="radio" value="M" name="genero" formControlName="genero">
+              <label for="hombre">Masculino</label>
+            </div>
+            <div>
+              <input id="mujer" type="radio" value="F" name="genero" formControlName="genero">
+              <label for="mujer">Femenino</label>
+            </div>
+            <div class="cont-input-text">
+              <div *ngIf="f.genero.touched && f.genero.invalid" class="alert alert-danger">
+                <div>el género es requerido.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <button class="btn btn-primary" style="margin: 0px 10px;" [disabled]="!form.valid"><strong>Continuar</strong> </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</section>

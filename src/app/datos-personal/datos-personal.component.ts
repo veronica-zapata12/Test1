@@ -33,8 +33,8 @@ export class DatosPersonalComponent implements OnInit {
     }
   }
   form = new FormGroup({
-    nombre: new FormControl('', Validators.required),
-    documento: new FormControl('', Validators.required),
+    nombre: new FormControl('', [Validators.required,Validators.pattern(/^[a-zA-ZáéíóúñÁÉÍÓÚÑ ]+$/)]),
+    documento: new FormControl('', [Validators.required,Validators.pattern(/^[0-9a-zA-Z]* *$/),Validators.minLength(5),Validators.maxLength(20)]),
     genero: new FormControl('', Validators.required),
     programa: new FormControl('', Validators.required)
   });

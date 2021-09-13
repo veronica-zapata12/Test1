@@ -201,5 +201,6 @@ export class PreguntasPersonalidadComponent implements OnInit, AfterViewInit {
     this.personalidadService.enviar();
     this.router.navigate(['/resultado']);
   }
+  
 }
 

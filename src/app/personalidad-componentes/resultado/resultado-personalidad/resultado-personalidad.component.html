@@ -8,13 +8,16 @@
     <div class="messages-guide">
      <img src="../../assets/imagenes/escudo-uco.png" alt="">
     <p>
-         Hola <strong>{{persona.nombre}} </strong> este es un breve análisis de algunos aspectos de tu personalidad y es basado las respuestas dadas en el Test
+         Hola <strong>{{persona.nombre}} </strong> este es un breve análisis de algunos rasgos de tu personalidad y es basado las respuestas dadas en el Test
     </p>
 </div>
 <br>
-<a href="/inicio">&laquo; volver al inicio</a><br>
-    <table *ngIf="clasificacionPE.length" class="table table-striped" border="2">
-        <thead>
+<a href="/inicio"><i class="fas fa-arrow-left"></i>  volver al inicio</a>
+<br>
+<br>
+<div class="col-md-9">
+    <table *ngIf="clasificacionPE.length" class="table table-striped" >
+        <thead class="table-dark">
             <tr>
                 <th>Escalas primarias</th>
                 <th>DE</th>
@@ -104,6 +107,7 @@
             </tr>
         </tbody>
     </table>
+</div>
 </div>
 
 </html>
