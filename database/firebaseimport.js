@@ -53,7 +53,7 @@ function inicializarPreguntasPersonalidad() {
     let preguntas = JSON.parse(preguntasData);
 
     preguntas.forEach(preguntas => {
-        adicionar("preguntas personalidad", preguntas);
+        adicionar("preguntas-personalidad", preguntas);
     });
     return;
 }
@@ -62,7 +62,7 @@ function inicializarPreguntasOtro() {
     let preguntas = JSON.parse(preguntasData);
 
     preguntas.forEach(preguntas => {
-        adicionar("preguntas autocontrol y eficacia", preguntas);
+        adicionar("preguntas-autocontrol-autoeficacia", preguntas);
     });
     return;
 }
@@ -71,7 +71,7 @@ function inicializarPreguntasMotivacion() {
     let preguntas = JSON.parse(preguntasData);
 
     preguntas.forEach(preguntas => {
-        adicionar("preguntas motivacion aprendizaje", preguntas);
+        adicionar("preguntas-motivacion-aprendizaje", preguntas);
     });
     return;
 }
