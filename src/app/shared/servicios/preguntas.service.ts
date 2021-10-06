@@ -13,9 +13,9 @@ import { PreguntasMotivacion } from '../modelos/preguntasMotivacion';
 })
 export class PreguntasService {
 
-  private readonly nombreColeccionPersonalidad = 'preguntas personalidad';
-  private readonly nombreColeccionAutocontrol = 'preguntas autocontrol y eficacia';
-  private readonly nombreColeccionMotivacion = 'preguntas motivacion aprendizaje';
+  private readonly nombreColeccionPersonalidad = 'preguntas-personalidad';
+  private readonly nombreColeccionAutocontrol = 'preguntas-autocontrol-autoeficacia';
+  private readonly nombreColeccionMotivacion = 'preguntas-motivacion-aprendizaje';
 
   private coleccionPreguntasPersonalidad: AngularFirestoreCollection<Preguntas>;
   private coleccionPreguntasAutocontrol: AngularFirestoreCollection<preguntasAutoCotrol>;
