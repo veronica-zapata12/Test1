@@ -17,6 +17,7 @@ const acciones = [
     { accion: 'preguntas-otro-test', run: inicializarPreguntasOtro },
     {accion: 'programas', run: inicializarProgramas},
     { accion: 'preguntas-motivacion-aprendizaje', run: inicializarPreguntasMotivacion },
+    { accion: 'preguntas-procastinacion', run: inicializarPreguntasProcastinacion },
 
     { accion: 'all', run: all }
 ];
@@ -82,6 +83,15 @@ function inicializarProgramas() {
 
     programas.forEach(programas => {
         adicionar("programas", programas);
+    });
+    return;
+}
+function inicializarPreguntasProcastinacion() {
+    let preguntasData = fs.readFileSync('json/procastinacion.json');
+    let preguntas = JSON.parse(preguntasData);
+
+    preguntas.forEach(preguntas => {
+        adicionar("preguntas-procastinacion", preguntas);
     });
     return;
 }
