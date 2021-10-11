@@ -6,6 +6,7 @@ import { Observable, of } from 'rxjs';
 import { OrdenamientoService } from './ordenamiento.service';
 import { preguntasAutoCotrol } from '../modelos/preguntasAutoCotrol';
 import { PreguntasMotivacion } from '../modelos/preguntasMotivacion';
+import { PreguntasProcastinacion } from '../modelos/preguntasProcastinacion';
 
 
 @Injectable({
@@ -16,20 +17,24 @@ export class PreguntasService {
   private readonly nombreColeccionPersonalidad = 'preguntas-personalidad';
   private readonly nombreColeccionAutocontrol = 'preguntas-autocontrol-autoeficacia';
   private readonly nombreColeccionMotivacion = 'preguntas-motivacion-aprendizaje';
+  private readonly nombreColeccionProcastinacion = 'preguntas-procastinacion';
 
   private coleccionPreguntasPersonalidad: AngularFirestoreCollection<Preguntas>;
   private coleccionPreguntasAutocontrol: AngularFirestoreCollection<preguntasAutoCotrol>;
   private coleccionPreguntasMotivacion: AngularFirestoreCollection<PreguntasMotivacion>;
+  private coleccionPreguntasProcastinacion: AngularFirestoreCollection<PreguntasProcastinacion>;
 
   private preguntasPersonalidad: Preguntas[];
   private preguntasAutocontrol: preguntasAutoCotrol[];
   private preguntasMotivacion: PreguntasMotivacion[];
+  private preguntasProcastinacion:PreguntasProcastinacion[];
 
   constructor(afs: AngularFirestore,
               private ordenamientoService: OrdenamientoService) {
     this.coleccionPreguntasPersonalidad = afs.collection<Preguntas>(this.nombreColeccionPersonalidad);
     this.coleccionPreguntasAutocontrol = afs.collection<preguntasAutoCotrol>(this.nombreColeccionAutocontrol);
     this.coleccionPreguntasMotivacion = afs.collection<PreguntasMotivacion>(this.nombreColeccionMotivacion);
+    this.coleccionPreguntasProcastinacion=afs.collection<PreguntasProcastinacion>(this.nombreColeccionProcastinacion)
 
   }
 
@@ -70,5 +75,17 @@ export class PreguntasService {
       
     }
     return preguntasMotivacionobservable;
+  }
+  consultarPreguntasProcastinacion(): Observable<PreguntasProcastinacion[]> {
+    let preguntasprocastinacionobservable = this.coleccionPreguntasProcastinacion.valueChanges().pipe(map(preguntas => {
+      this.preguntasProcastinacion = preguntas.sort(this.ordenamientoService.ascendentemente('orden'));
+      return preguntas;
+    }));
+
+    if (this.preguntasProcastinacion) {
+      preguntasprocastinacionobservable = of(this.preguntasProcastinacion);
+      
+    }
+    return preguntasprocastinacionobservable;
   }
 }
