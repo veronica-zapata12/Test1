@@ -1,0 +1,123 @@
+[{
+    "orden": 1,
+    "descripcion": "Te gustó el reto de esperar hasta la fecha de entrega del trabajo o la actividad propuesta por el profesor "
+   
+    }, {
+    "orden": 2,
+    "descripcion": "Tenías ganas de sentir la emoción de hacer esta tarea en el último momento "
+  
+}, {
+    "orden": 3,
+    "descripcion": "Estabas preocupado de que si lo hacías bien, tus compañeros te rechazaran "
+   
+}, {
+    "orden": 4,
+    "descripcion": "No te gustó que te pusieran plazos (fechas límites) "
+  
+},
+{
+    "orden": 5,
+    "descripcion": "Te sentías demasiado perezoso para escribir un trabajo de final de curso "
+    
+}, {
+    "orden": 6,
+    "descripcion": "Tenías muchas otras cosas que hacer "
+    
+}, {
+    "orden": 7,
+    "descripcion": "Sabías que tus compañeros tampoco habían empezado el trabajo "
+    
+}, {
+    "orden": 8,
+    "descripcion": "No tenías bastante energía para empezar la tarea "
+   
+},
+{
+    "orden": 9,
+    "descripcion": "No te gusta para nada escribir trabajos extensos "
+  
+},
+{
+    "orden": 10,
+    "descripcion": "Esperaste hasta que un compañero hizo el trabajo suyo para que te pudiera aconsejar "
+  
+},
+{
+    "orden": 11,
+    "descripcion": "Pensabas que cuesta demasiado tiempo escribir un trabajo de final de curso "
+    
+},
+
+{
+    "orden": 12,
+    "descripcion": "Te sentías desbordado por la tarea que te puso el profesor en el curso "
+
+},
+{
+    "orden": 13,
+    "descripcion": "Tus amigos te presionaban para hacer otras cosas diferentes a tus tareas "
+   
+},
+{
+    "orden": 14,
+    "descripcion": "CEsperaste a ver si el profesor te ofrecía más información sobre el trabajo "
+    
+},
+{
+    "orden": 15,
+    "descripcion": "Te pusiste metas muy altas y te preocupaba no poder alcanzarlas "
+    
+},
+{
+    "orden": 16,
+    "descripcion": "Estabas preocupado de que si recibías una buena nota la gente esperaría mucho de ti en el futuro "
+   
+},
+{
+    "orden": 17,
+    "descripcion": "Estabas preocupado de no alcanzar tus propias expectativas "
+   
+},
+{
+    "orden": 18,
+    "descripcion": "Estabas preocupado de que al profesor no le gustara tu trabajo "
+   
+},
+{
+    "orden": 19,
+    "descripcion": "Estabas preocupado de recibir una mala calificación "
+},
+{
+    "orden": 20,
+    "descripcion": "Pensabas que no sabías lo suficiente para escribir el trabajo "
+ 
+}
+,
+{
+    "orden": 21,
+    "descripcion": "No tenías confianza en ti mismo para hacer un buen trabajo "
+ 
+}
+,
+{
+    "orden": 22,
+    "descripcion": "Tenías problemas en pedir información a otros "
+ 
+}
+,
+{
+    "orden": 23,
+    "descripcion": "No podías elegir entre todos los posibles temas "
+ 
+},
+{
+    "orden": 24,
+    "descripcion": "Necesitabas pedir información al profesor pero no te sentías cómodo acercándote a el/ella "
+ 
+},
+{
+    "orden": 25,
+    "descripcion": "Tenías dificultades en saber qué incluir y qué no incluir en tu trabajo "
+ 
+}
+]
