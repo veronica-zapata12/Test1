@@ -9,6 +9,8 @@ import { PreguntasMotivacionComponent } from './preguntas-motivacion/preguntas/p
 import { ReporteMotivacionComponent } from './preguntas-motivacion/reporte/reporte-motivacion/reporte-motivacion.component';
 import { ReporteComponent } from './autoeficacia-componentes/reporte/reporte.component';
 import { PreguntasComponent } from './autoeficacia-componentes/preguntas/preguntas.component';
+import { PreguntasProcastinacionComponent } from './procastinacion/preguntas-procastinacion/preguntas-procastinacion.component';
+import { ReporteProcastinacionComponent } from './procastinacion/reporte-procastinacion/reporte-procastinacion.component';
 
 
 
@@ -42,6 +44,11 @@ const routes: Routes = [
     component:ReporteMotivacionComponent
   },
   {
+    path:'reporte-procastinacion',
+    component:ReporteProcastinacionComponent
+
+  },
+  {
     path:'cuestionario-autoeficacia',
     component:PreguntasComponent
 
@@ -49,6 +56,11 @@ const routes: Routes = [
   {
     path:'cuestionario-motivacion',
     component:PreguntasMotivacionComponent
+
+  },
+  {
+    path:'cuestionario-procastinacion',
+    component:PreguntasProcastinacionComponent
 
   },
  

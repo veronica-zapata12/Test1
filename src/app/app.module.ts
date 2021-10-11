@@ -25,6 +25,8 @@ import { PreguntasMotivacionComponent } from './preguntas-motivacion/preguntas/p
 import { ReporteMotivacionComponent } from './preguntas-motivacion/reporte/reporte-motivacion/reporte-motivacion.component';
 import { PreguntasComponent } from './autoeficacia-componentes/preguntas/preguntas.component';
 import { ReporteComponent } from './autoeficacia-componentes/reporte/reporte.component';
+import { PreguntasProcastinacionComponent } from './procastinacion/preguntas-procastinacion/preguntas-procastinacion.component';
+import { ReporteProcastinacionComponent } from './procastinacion/reporte-procastinacion/reporte-procastinacion.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ReporteComponent } from './autoeficacia-componentes/reporte/reporte.com
     PreguntasComponent,
     ReporteComponent,
     PreguntasMotivacionComponent,
-    ReporteMotivacionComponent
+    ReporteMotivacionComponent,
+    PreguntasProcastinacionComponent,
+    ReporteProcastinacionComponent
   ],
   imports: [
     BrowserModule,
