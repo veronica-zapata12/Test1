@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { RespuestasMotivacion } from '../modelos/respuestasMotivacion';
 import { RespuestasAutoControl } from '../modelos/respuestasAutoControl';
+import { RespuestasProcastincacion } from '../modelos/respuestasProcastinacion';
 
 @Injectable({
   providedIn: 'root'
@@ -18,17 +19,19 @@ export class ReporteService {
      */
     private readonly nombreColeccionAutocontrol = 'resultado autocontrol y eficacia';
     private readonly nombreColeccionMotivacionTest = 'resultado MotivacionTest';
+    private readonly nombreColeccionProcastinacionTest = 'resultado-procastinacion';
    
     private coleccionResultadoEncuesta: AngularFirestoreCollection<Respuestas>;
     
     private coleccionResultadoEncuestaAutocontrol: AngularFirestoreCollection<RespuestasAutoControl>;
     private coleccionResultadoEncuestaMotivacionTest: AngularFirestoreCollection<RespuestasMotivacion>;
-
+    private coleccionResultadoEncuestaProcastinacion: AngularFirestoreCollection<RespuestasProcastincacion>;
     
     constructor(afs: AngularFirestore) {
         this.coleccionResultadoEncuesta = afs.collection<Respuestas>(this.nombreColeccion);
         this.coleccionResultadoEncuestaAutocontrol = afs.collection<RespuestasAutoControl>(this.nombreColeccionAutocontrol);
         this.coleccionResultadoEncuestaMotivacionTest = afs.collection<RespuestasMotivacion>(this.nombreColeccionMotivacionTest);
+        this.coleccionResultadoEncuestaProcastinacion=afs.collection<RespuestasProcastincacion>(this.nombreColeccionProcastinacionTest);
       }
 
 
@@ -51,5 +54,8 @@ export class ReporteService {
      */
     obtenerTodosMotivacionTest(): Observable<RespuestasMotivacion[]> {
       return this.coleccionResultadoEncuestaMotivacionTest.valueChanges();
+    }
+    obtenerTodosProcastinacionTest(): Observable<RespuestasProcastincacion[]> {
+      return this.coleccionResultadoEncuestaProcastinacion.valueChanges();
     }
   }

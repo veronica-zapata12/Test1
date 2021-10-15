@@ -68,7 +68,7 @@ export class ReporteComponent implements OnInit {
     }
     
 
-      copia1.fecha = row.fecha;
+      copia1.fecha = row.fecha.substring(4);
       copia1.nombre = row.datosPersonales.nombre;
       copia1.documento = row.datosPersonales.documento;
       copia1.programa=row.datosPersonales.programa;
