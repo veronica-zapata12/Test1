@@ -1,1 +1,73 @@
-<p>preguntas-procastinacion works!</p>
+<app-header></app-header>
+<div class="container">
+<section class="ventana-emergente">
+    <ng-template #contenido let-c="close" let-d="dismiss" class="template">
+      <div class="modal-header bg-info text-white">
+        <h4 class="modal-title" id="modal-basic-title"><strong>¡¡INSTRUCCIONES!!</strong></h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>       
+      </div>
+      <div class="modal-body">
+        <div>
+          <p>A continuación encontrará, una serie de preguntas y debajo unos números del 1-5,
+            donde el <strong> 1 es nunca, 3 rara vez y 5 es siempre.</strong> <br>
+            
+            
+            </p>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Aceptar</button>
+    </div>
+    </ng-template>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Test De Procastinación</h2>
+      <div class="respuestas-info">
+        <p><strong>RECUERDE QUE DEBE RESPONDER TODAS LAS PREGUNTAS EN ORDEN YA QUE ESTO PUEDE AFECTAR LOS RESULTADOS
+          DEL TEST.</strong>
+          <br>
+          Este Test tiene por finalidad conocer la percepción que tienes como estudiante respecto a tu procastinación académica. <br>
+          No hay respuestas buenas o malas.
+          <br>
+         <strong> Recuerda:  1 es nunca, 3 rara vez y 5 es siempre.</strong>
+        </p>
+
+      </div>
+    <div class="pregunta"
+        *ngFor="let pregunta of preguntas let preguntaindex = index ">
+        <span for=preguntas> <strong>{{pregunta.orden}}. {{pregunta.descripcion}}</strong></span>
+
+        <div>
+          <br>
+          <mat-button-toggle-group #res="matButtonToggleGroup"
+          *ngFor="let item of respuestas; let indice = index">
+            <mat-button-toggle class="chip"
+              [ngClass]="esRespuestaSeleccionado(item, pregunta.orden) ? 'chip-hito-select' : 'chip'"
+              (click)="agregar(item, pregunta.orden)">
+              {{item}}
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        <div >
+          <label class="label-left">Nunca</label><label class="center">Rara vez</label><label class="label-right">Siempre</label>
+        </div>
+        </div>
+
+      </div>
+      
+      
+    <div class="col text-center">
+      <button [disabled]="respuestasSelecionadas.length <=24" class="btn btns-primary"  type="submit" (click)="enviar()">Enviar</button>
+    </div>
+    <div class="respuestas-info">
+      <P><STRONg>RECUERDE QUE DEBE RESPONDER TODAS LAS PREGUNTAS EN ORDEN POR QUE ESTO PUEDE AFECTAR LOS RESULTADOS
+          DEL TEST</STRONg></P>
+    </div>
+    
+  </div>
+  </section>
+</div>
+

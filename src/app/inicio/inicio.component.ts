@@ -5,6 +5,7 @@ import { InicioService } from '../shared/servicios/inicio.service';
 import { AutoContolService } from '../shared/servicios/auto-contol.service';
 import { MotivacionService } from '../shared/servicios/motivacion.service';
 import { PersonalidadService } from '../shared/servicios/personalidad.service';
+import { ProcastinacionService } from '../shared/servicios/procastinacion.service';
 
 @Component({
   selector: 'app-inicio',
@@ -18,7 +19,7 @@ export class InicioComponent implements OnInit , AfterViewInit {
     this.abrirModal();
   }
   habilitarContenido:boolean;
-  constructor(private router: Router,private inicioService:InicioService, private personalidadService:PersonalidadService, private autocotrolService:AutoContolService, private motivacionService:MotivacionService,private modalService: NgbModal, private config: NgbModalConfig) {
+  constructor(private router: Router,private inicioService:InicioService, private personalidadService:PersonalidadService, private autocotrolService:AutoContolService, private motivacionService:MotivacionService,private procastinacionService:ProcastinacionService,private modalService: NgbModal, private config: NgbModalConfig) {
     config.backdrop = 'static';
     config.keyboard = false;
    }
@@ -28,6 +29,7 @@ export class InicioComponent implements OnInit , AfterViewInit {
     this.personalidadService.limpiarTodo();
     this.autocotrolService.limpiarTodo();
     this.motivacionService.limpiarTodo();
+    this.procastinacionService.limpiarTodo();
 
 
 
