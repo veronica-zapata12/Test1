@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Respuestas } from 'src/app/shared/modelos/respuestas';
+import { PngFileService } from 'src/app/shared/servicios/png-file.service';
 import { ReporteService } from 'src/app/shared/servicios/reporte.service';
 import Swal from 'sweetalert2';
 
@@ -13,7 +14,7 @@ export class ResultadoPersonalizadoComponent implements OnInit {
   respuestasCopiar = [];
   respu;
   descripciondelPE = [];
-  constructor(private reporteService: ReporteService) { }
+  constructor(private reporteService: ReporteService,private pngFile:PngFileService) { }
 
   ngOnInit(): void {
     this.reporteService.obtenerTodos().subscribe(respuestas => {
@@ -126,6 +127,12 @@ export class ResultadoPersonalizadoComponent implements OnInit {
         
       }
     
+    }
+    public descargar() {
+      this.pngFile.generar(document.getElementById('resultado'), this.respu.datosPersonales.nombre);
+      setTimeout(()=>{
+        this.respu=""
+      },2000);
     }
 
 }
