@@ -1,11 +1,10 @@
-<app-header></app-header>
 <div class="container">
     <div class="row">
-        <div class="col-md-12"><strong> Resultados del test de motivación</strong></div>
+        <div class="col-md-12" style="text-align: center;"><strong> Resultados del test de motivación</strong></div>
         <div class="container">
             <div class="row" *ngIf="respuestas">
-                <div class="col-md-12">Total encuestados: {{respuestas.length}}</div>
-                <div class="col-md 12">
+                <div class="col-md-12" style="margin-bottom: 15px;margin-top: 15px ;text-align: center;">Total encuestados: {{respuestas.length}}</div>
+                <div class="col-md 12" style="display: flex;align-items: center;justify-content: center;">
                     <button (click)="descargar()" class="btn btn-primary">Descargar</button>
                 </div>
             </div>

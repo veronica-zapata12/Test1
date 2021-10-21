@@ -11,6 +11,10 @@ import { ReporteComponent } from './autoeficacia-componentes/reporte/reporte.com
 import { PreguntasComponent } from './autoeficacia-componentes/preguntas/preguntas.component';
 import { PreguntasProcastinacionComponent } from './procastinacion/preguntas-procastinacion/preguntas-procastinacion.component';
 import { ReporteProcastinacionComponent } from './procastinacion/reporte-procastinacion/reporte-procastinacion.component';
+import { ResultadoPersonalizadoComponent } from './personalidad-componentes/resultado-personalizado/resultado-personalizado.component';
+import { LoginComponent } from './login/login.component';
+import { ReportesComponent } from './reportes/reportes.component';
+
 
 
 
@@ -32,23 +36,6 @@ const routes: Routes = [
     component: ResultadoPersonalidadComponent
   },
   {
-    path: 'reporte-personalidad',
-    component: ReportePersonalidadComponent
-  },
-  {
-    path: 'reporte-autoYefi',
-    component:ReporteComponent
-  },
-  {
-    path: 'reporte-moti',
-    component:ReporteMotivacionComponent
-  },
-  {
-    path:'reporte-procastinacion',
-    component:ReporteProcastinacionComponent
-
-  },
-  {
     path:'cuestionario-autoeficacia',
     component:PreguntasComponent
 
@@ -63,9 +50,21 @@ const routes: Routes = [
     component:PreguntasProcastinacionComponent
 
   },
+  {
+    path:'resultado-personalizado',
+    component:ResultadoPersonalizadoComponent
+  },
+  {
+    path:'login',
+    component:LoginComponent
+  },
+  {
+    path:'reportes',
+    component:ReportesComponent,
+  },
  
   {
-    path:'',
+    path:'**',
     redirectTo: 'inicio', pathMatch: 'full'
   }
 ];
