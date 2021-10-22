@@ -15,7 +15,7 @@ export class MotivacionService {
 
   }; 
   
-  private readonly nombreColeccion = 'resultado MotivacionTest';
+  private readonly nombreColeccion = 'resultado-motivacion';
 
 
   private coleccionResultado: AngularFirestoreCollection<RespuestasMotivacion>;

@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RespuestasProcastincacion } from 'src/app/shared/modelos/respuestasProcastinacion';
 import { ExcelService } from 'src/app/shared/servicios/excel.service';
-import { OrdenamientoService } from 'src/app/shared/servicios/ordenamiento.service';
 import { ReporteService } from 'src/app/shared/servicios/reporte.service';
 
 @Component({
@@ -9,31 +8,37 @@ import { ReporteService } from 'src/app/shared/servicios/reporte.service';
   templateUrl: './reporte-procastinacion.component.html',
   styleUrls: ['./reporte-procastinacion.component.sass']
 })
-export class ReporteProcastinacionComponent implements OnInit {
+export class ReporteProcastinacionComponent implements OnInit,OnDestroy {
 /**
     * Listado de respuestas
     */
  public respuestas: RespuestasProcastincacion[];
  copia = [];
  public respuestasCopiar = [];
+resultado:any
 
- constructor(private reporteService: ReporteService, private ordenamiento: OrdenamientoService,
+ constructor(private reporteService: ReporteService,
    private excelervice: ExcelService) { }
+   ngOnDestroy() {
+    this.resultado.unsubscribe();
+  }
 
  ngOnInit() {
-
-   this.reporteService.obtenerTodosProcastinacionTest().subscribe(respuestas => {
-     this.respuestas = respuestas;
-     this.respuestas.sort(this.ordenamiento.ascendentemente('orden'));
-
+  
+   this.resultado=this.reporteService.obtenerTodosProcastinacionTest().subscribe(respuestas => {
+    this.respuestas = respuestas;
      respuestas.forEach(row => {
        this.respuestasCopiar.push(row);
-     });
+     });  
+     
    });
-
+ 
+  
+   
+ 
  }
 
- descargar() {
+ descargar() {   
   this.respuestasCopiar.forEach(row => {
   let copia1 = {
     fecha: "",
@@ -105,10 +110,10 @@ export class ReporteProcastinacionComponent implements OnInit {
     this.copia.push(copia1)
    
   });
-  console.log(this.copia);
   
   this.excelervice.exportAsExcelFile(this.copia, 'respuestas Test Procastinacion');
   this.copia=[];
+  
 }
 
 

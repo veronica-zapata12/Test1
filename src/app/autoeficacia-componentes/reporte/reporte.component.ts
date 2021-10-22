@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ReporteService } from 'src/app/shared/servicios/reporte.service';
-import { OrdenamientoService } from 'src/app/shared/servicios/ordenamiento.service';
 import { ExcelService } from 'src/app/shared/servicios/excel.service';
 import { RespuestasAutoControl } from 'src/app/shared/modelos/respuestasAutoControl';
 
@@ -9,22 +8,25 @@ import { RespuestasAutoControl } from 'src/app/shared/modelos/respuestasAutoCont
   templateUrl: './reporte.component.html',
   styleUrls: ['./reporte.component.sass']
 })
-export class ReporteComponent implements OnInit {
+export class ReporteComponent implements OnInit,OnDestroy {
 /**
     * Listado de respuestas
     */
    public respuestas: RespuestasAutoControl[];
    copia = [];
    public respuestasCopiar = [];
+   resultado:any;
  
-   constructor(private reporteService: ReporteService, private ordenamiento: OrdenamientoService,
+   constructor(private reporteService: ReporteService,
      private excelervice: ExcelService) { }
- 
+     ngOnDestroy() {
+      this.resultado.unsubscribe();
+    }
    ngOnInit() {
  
-     this.reporteService.obtenerTodosAutocontrol().subscribe(respuestas => {
+     this.resultado=this.reporteService.obtenerTodosAutocontrol().subscribe(respuestas => {
        this.respuestas = respuestas;
-       this.respuestas.sort(this.ordenamiento.ascendentemente('orden'));
+       
  
        respuestas.forEach(row => {
          this.respuestasCopiar.push(row);
@@ -101,7 +103,6 @@ export class ReporteComponent implements OnInit {
       this.copia.push(copia1)
      
     });
-    console.log(this.copia);
     
     this.excelervice.exportAsExcelFile(this.copia, 'respuestas Test autoeficacia y autoeficiencia');
     this.copia=[];

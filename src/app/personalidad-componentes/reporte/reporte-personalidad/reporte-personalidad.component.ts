@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ReporteService } from 'src/app/shared/servicios/reporte.service';
-import { OrdenamientoService } from 'src/app/shared/servicios/ordenamiento.service';
 import { ExcelService } from 'src/app/shared/servicios/excel.service';
 import { Respuestas } from 'src/app/shared/modelos/respuestas';
 
@@ -9,23 +8,24 @@ import { Respuestas } from 'src/app/shared/modelos/respuestas';
   templateUrl: './reporte-personalidad.component.html',
   styleUrls: ['./reporte-personalidad.component.sass']
 })
-export class ReportePersonalidadComponent implements OnInit {
+export class ReportePersonalidadComponent implements OnInit,OnDestroy {
   /**
      * Listado de respuestas
      */
   public respuestas: Respuestas[];
   copia = [];
   public respuestasCopiar = [];
+  resultado:any
 
-  constructor(private reporteService: ReporteService, private ordenamiento: OrdenamientoService,
+  constructor(private reporteService: ReporteService,
     private excelervice: ExcelService) { }
-
+    ngOnDestroy() {
+      this.resultado.unsubscribe();
+    }
   ngOnInit() {
 
-    this.reporteService.obtenerTodos().subscribe(respuestas => {
+    this.resultado=this.reporteService.obtenerTodos().subscribe(respuestas => {
       this.respuestas = respuestas;
-      this.respuestas.sort(this.ordenamiento.ascendentemente('orden'));
-
       respuestas.forEach(row => {
         this.respuestasCopiar.push(row);
       });

@@ -13,12 +13,12 @@ export class ReporteService {
  /*
     * Nombre de la colección en firebase
      */
-    private readonly nombreColeccion = 'resultado personalidad';
+    private readonly nombreColeccion = 'resultado-personalidad';
      /*
     * Nombre de la colección en firebase
      */
-    private readonly nombreColeccionAutocontrol = 'resultado autocontrol y eficacia';
-    private readonly nombreColeccionMotivacionTest = 'resultado MotivacionTest';
+    private readonly nombreColeccionAutocontrol = 'resultado-autocontrol-eficacia';
+    private readonly nombreColeccionMotivacionTest = 'resultado-motivacion';
     private readonly nombreColeccionProcastinacionTest = 'resultado-procastinacion';
    
     private coleccionResultadoEncuesta: AngularFirestoreCollection<Respuestas>;

@@ -14,7 +14,7 @@ export class AutoContolService {
 
   }; 
   
-  private readonly nombreColeccion = 'resultado autocontrol y eficacia';
+  private readonly nombreColeccion = 'resultado-autocontrol-eficacia';
 
 
   private coleccionResultado: AngularFirestoreCollection<RespuestasAutoControl>;

@@ -15,7 +15,7 @@ export class PersonalidadService {
   };
 
 
-  private readonly nombreColeccion = 'resultado personalidad';
+  private readonly nombreColeccion = 'resultado-personalidad';
 
 
   private coleccionResultado: AngularFirestoreCollection<Respuestas>;

@@ -1,30 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RespuestasMotivacion } from 'src/app/shared/modelos/respuestasMotivacion';
 import { ReporteService } from 'src/app/shared/servicios/reporte.service';
 import { ExcelService } from 'src/app/shared/servicios/excel.service';
-import { OrdenamientoService } from 'src/app/shared/servicios/ordenamiento.service';
+
 
 @Component({
   selector: 'app-reporte-motivacion',
   templateUrl: './reporte-motivacion.component.html',
   styleUrls: ['./reporte-motivacion.component.sass']
 })
-export class ReporteMotivacionComponent implements OnInit {
+export class ReporteMotivacionComponent implements OnInit,OnDestroy {
 /**
     * Listado de respuestas
     */
    public respuestas: RespuestasMotivacion[];
    copia = [];
    public respuestasCopiar = [];
+   resultado:any
  
-   constructor(private reporteService: ReporteService, private ordenamiento: OrdenamientoService,
+   constructor(private reporteService: ReporteService,
      private excelervice: ExcelService) { }
- 
+     ngOnDestroy() {
+      this.resultado.unsubscribe();
+    }
    ngOnInit() {
  
-     this.reporteService.obtenerTodosMotivacionTest().subscribe(respuestas => {
+     this.resultado=this.reporteService.obtenerTodosMotivacionTest().subscribe(respuestas => {
        this.respuestas = respuestas;
-       this.respuestas.sort(this.ordenamiento.ascendentemente('orden'));
  
        respuestas.forEach(row => {
          this.respuestasCopiar.push(row);
@@ -147,10 +149,8 @@ export class ReporteMotivacionComponent implements OnInit {
 
       this.copia.push(copia1)
      
-    });
-    console.log(this.copia);
-    
-    this.excelervice.exportAsExcelFile(this.copia, 'respuestas Test autoeficacia');
+    });    
+    this.excelervice.exportAsExcelFile(this.copia, 'respuestas Test motivación');
     this.copia=[];
   }
 
