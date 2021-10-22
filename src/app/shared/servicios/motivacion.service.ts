@@ -49,7 +49,7 @@ export class MotivacionService {
   };
 }
 public enviar(): Promise<any> {
-  this.motivacionTest.fecha = new Date().toString().substring(0, 15);
+  this.motivacionTest.fecha = new Date().toString().substring(4, 15);
   return this.coleccionResultado.add(this.motivacionTest);
 }
 }

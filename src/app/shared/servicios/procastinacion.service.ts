@@ -49,7 +49,7 @@ export class ProcastinacionService {
   };
 }
 public enviar(): Promise<any> {
-  this.procastinacionTest.fecha = new Date().toString().substring(0, 15);
+  this.procastinacionTest.fecha = new Date().toString().substring(4, 15);
   return this.coleccionResultado.add(this.procastinacionTest);
 }
 }

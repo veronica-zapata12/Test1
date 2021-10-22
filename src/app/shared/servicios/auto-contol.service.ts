@@ -49,7 +49,7 @@ export class AutoContolService {
   };
 }
 public enviar(): Promise<any> {
-  this.autoControlTest.fecha = new Date().toString().substring(0, 15);
+  this.autoControlTest.fecha = new Date().toString().substring(4, 15);
   return this.coleccionResultado.add(this.autoControlTest);
 }
 }

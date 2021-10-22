@@ -77,7 +77,7 @@ export class PersonalidadService {
     this.resultado.PD = pd;
   }
   public enviar(): Promise<any> {
-    this.resultado.fecha = new Date().toString().substring(0, 15);
+    this.resultado.fecha = new Date().toString().substring(4, 15);
     return this.coleccionResultado.add(this.resultado);
   }
 }
