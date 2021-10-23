@@ -24,11 +24,13 @@ export class ResultadoPersonalizadoComponent implements OnInit {
       });
     });
   }
-  generar(nombre:String, id:String){
+  generar( documento:String){
     
     
-    this.respu=this.respuestasCopiar.find(rsta=>{
-      if(rsta.datosPersonales.nombre===nombre && rsta.datosPersonales.documento===id){
+    this.respu=this.respuestasCopiar.find(rsta=>{      
+
+      if(rsta.datosPersonales.documento===documento){
+        
         return rsta;
       }
       
@@ -119,7 +121,7 @@ export class ResultadoPersonalizadoComponent implements OnInit {
       position: 'center',
       icon: 'error',
       title: 'No encontrado',
-      text: 'El nombre: '+nombre +', con documento: '+id  + ' no existe',
+      text: 'El documento: '+ documento  + ' no existe',
       showConfirmButton: false,
       showCancelButton: true,
       cancelButtonText: 'Ok!'
@@ -132,7 +134,7 @@ export class ResultadoPersonalizadoComponent implements OnInit {
       this.pngFile.generar(document.getElementById('resultado'), this.respu.datosPersonales.nombre);
       setTimeout(()=>{
         this.respu=""
-      },2000);
+      },3000);
     }
 
 }

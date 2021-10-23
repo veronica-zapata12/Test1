@@ -36,7 +36,7 @@ export class DatosPersonalComponent implements OnInit {
   }
   form = new FormGroup({
     nombre: new FormControl('', [Validators.required,Validators.pattern(/^[a-zA-ZáéíóúñÁÉÍÓÚÑ]+ +[a-zA-ZáéíóúñÁÉÍÓÚÑ]+[ ?[a-zA-ZáéíóúñÁÉÍÓÚÑ]*]*$/)]),
-    documento: new FormControl('', [Validators.required,Validators.pattern(/^[0-9a-zA-Z]* *$/),Validators.minLength(5),Validators.maxLength(20)]),
+    documento: new FormControl('', [Validators.required,Validators.pattern(/^[0-9a-zA-Z]*$/),Validators.minLength(5),Validators.maxLength(20)]),
     genero: new FormControl('', Validators.required),
     programa: new FormControl('', Validators.required)
   });
@@ -47,8 +47,6 @@ export class DatosPersonalComponent implements OnInit {
 
   submit() {
     if(this.form.valid){
-
-    
 
     if(this.habilitarTest== 'testPersonalidad'){
     this.personalidadService.agregarDatosPersonales(this.form.value);

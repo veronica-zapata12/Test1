@@ -4,22 +4,17 @@
     <br>
     <section *ngIf="!respu">
     <div class="row">
-        
-            <div class="form-group">
-                <label for="nombre"> <strong>Nombre y Apellido</strong></label>
-                <input type="text" #nombre class="form-control cont-input-text" 
-                  placeholder="Escriba nombres y apellidos">
-              </div> 
+    
               <div class="form-group" style="margin: 0px 10px 0px;">
                 <label for="documento"><strong> Número de documento</strong></label>
-                <input type="text" #doc class="form-control cont-input-text" 
+                <input type="text" #documento class="form-control cont-input-text" 
                   placeholder="Escriba el número del documento">
               </div>
             
                 <br>
                 <div class="col-md 12">
                     <br>
-                    <button (click)="generar(nombre.value,doc.value)" class="btn btn-primary">Buscar</button>
+                    <button (click)="generar(documento.value)" class="btn btn-primary">Buscar</button>
                 </div>
               
 
