@@ -134,7 +134,7 @@ export class ResultadoPersonalizadoComponent implements OnInit {
       this.pngFile.generar(document.getElementById('resultado'), this.respu.datosPersonales.nombre);
       setTimeout(()=>{
         this.respu=""
-      },3000);
+      },2000);
     }
 
 }
