@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../shared/servicios/login.service';
 
@@ -10,9 +10,12 @@ import { LoginService } from '../shared/servicios/login.service';
 export class ReportesComponent implements OnInit {
   isLogged:boolean=false;
   constructor(private router: Router, private loginService:LoginService) { }
-
+ 
   ngOnInit(): void {
     this.getLogin();
+    setTimeout(()=>{
+      this.logout()
+    },7200000);
   }
 
   getLogin(){
