@@ -5,6 +5,7 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 import { RespuestasMotivacion } from '../modelos/respuestasMotivacion';
 import { RespuestasAutoControl } from '../modelos/respuestasAutoControl';
 import { RespuestasProcastincacion } from '../modelos/respuestasProcastinacion';
+import { RespuestasInteresesProfesionales } from '../modelos/respuestasInteresesProfesionales';
 
 @Injectable({
   providedIn: 'root'
@@ -20,18 +21,22 @@ export class ReporteService {
     private readonly nombreColeccionAutocontrol = 'resultado-autocontrol-eficacia';
     private readonly nombreColeccionMotivacionTest = 'resultado-motivacion';
     private readonly nombreColeccionProcastinacionTest = 'resultado-procastinacion';
+    private readonly nombreColeccionInteresesProfesionalesTest = 'resultado-intereses-profesionales';
    
     private coleccionResultadoEncuesta: AngularFirestoreCollection<Respuestas>;
     
     private coleccionResultadoEncuestaAutocontrol: AngularFirestoreCollection<RespuestasAutoControl>;
     private coleccionResultadoEncuestaMotivacionTest: AngularFirestoreCollection<RespuestasMotivacion>;
     private coleccionResultadoEncuestaProcastinacion: AngularFirestoreCollection<RespuestasProcastincacion>;
+    private coleccionResultadoEncuestaInteresesProfesionales: AngularFirestoreCollection<RespuestasInteresesProfesionales>;
+
     
     constructor(afs: AngularFirestore) {
         this.coleccionResultadoEncuesta = afs.collection<Respuestas>(this.nombreColeccion);
         this.coleccionResultadoEncuestaAutocontrol = afs.collection<RespuestasAutoControl>(this.nombreColeccionAutocontrol);
         this.coleccionResultadoEncuestaMotivacionTest = afs.collection<RespuestasMotivacion>(this.nombreColeccionMotivacionTest);
         this.coleccionResultadoEncuestaProcastinacion=afs.collection<RespuestasProcastincacion>(this.nombreColeccionProcastinacionTest);
+        this.coleccionResultadoEncuestaInteresesProfesionales=afs.collection<RespuestasInteresesProfesionales>(this.nombreColeccionInteresesProfesionalesTest);
       }
 
 
@@ -57,5 +62,8 @@ export class ReporteService {
     }
     obtenerTodosProcastinacionTest(): Observable<RespuestasProcastincacion[]> {
       return this.coleccionResultadoEncuestaProcastinacion.valueChanges();
+    }
+    obtenerTodosInteresesProfesionalesTest(): Observable<RespuestasInteresesProfesionales[]> {
+      return this.coleccionResultadoEncuestaInteresesProfesionales.valueChanges();
     }
   }

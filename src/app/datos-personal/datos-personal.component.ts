@@ -9,6 +9,7 @@ import { MotivacionService } from '../shared/servicios/motivacion.service';
 import { AutoContolService } from '../shared/servicios/auto-contol.service';
 import { PersonalidadService } from '../shared/servicios/personalidad.service';
 import { ProcastinacionService } from '../shared/servicios/procastinacion.service';
+import { InteresesProfesionalesService } from '../shared/servicios/intereses-profesionales.service';
 
 @Component({
   selector: 'app-datos-personal',
@@ -19,13 +20,15 @@ export class DatosPersonalComponent implements OnInit {
   programas = [];
   habilitarTest:string;
 
-  constructor(private router: Router, private personalidadService: PersonalidadService, private progrmasService: ProgramasService,private motivacioService:MotivacionService,private autoContolService:AutoContolService,private procastinacionService:ProcastinacionService, private inicioService:InicioService) { }
+  constructor(private router: Router, private personalidadService: PersonalidadService, private progrmasService: ProgramasService,private motivacioService:MotivacionService,
+    private autoContolService:AutoContolService,private procastinacionService:ProcastinacionService, private inicioService:InicioService, private interesesProfesionalesService:InteresesProfesionalesService) { }
 
   ngOnInit(): void {
     this.personalidadService.limpiarTodo();
     this.autoContolService.limpiarTodo();
     this.motivacioService.limpiarTodo();
     this.procastinacionService.limpiarTodo();
+    this.interesesProfesionalesService.limpiarTodo();
     this.progrmasService.obtenerTodosProgramas().subscribe(data => {
       this.programas = data;
     });
@@ -65,7 +68,7 @@ export class DatosPersonalComponent implements OnInit {
       this.router.navigate(['/cuestionario-procastinacion']);
     }
     if (this.habilitarTest=='intereses'){
-      this.procastinacionService.agregarDatosPersonales(this.form.value);
+      this.interesesProfesionalesService.agregarDatosPersonales(this.form.value);
       this.router.navigate(['/cuestionario-intereses-profesionales']);
     }
     

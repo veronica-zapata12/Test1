@@ -1,1 +1,80 @@
-<p>preguntas-intereses-profesionales works!</p>
+<app-header></app-header>
+<div class="container">
+<section class="ventana-emergente">
+    <ng-template #contenido let-c="close" let-d="dismiss" class="template">
+      <div class="modal-header bg-info text-white">
+        <h4 class="modal-title" id="modal-basic-title"><strong>¡¡INSTRUCCIONES!!</strong></h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>       
+      </div>
+      <div class="modal-body">
+        <div>
+          <p>A continuación encontrará, una serie de preguntas y debajo unos números del 1-3,
+            donde el <strong> 1 te desagrada, 2 te es indiferente y 3 te agrada.</strong> <br>
+            
+            Si no comprendes el significado de alguna palabra o frase consulta con la persona que te administra el cuestionario 
+            para que puedas dar una respuesta segura a ese ítem. <br>
+            
+            </p>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Aceptar</button>
+    </div>
+    </ng-template>
+  </section>
+  <section>
+    <div>
+      <h2>Test Intereses Profesionales</h2>
+      <div class="respuestas-info">
+        <p> <strong>RECUERDE QUE DEBE RESPONDER TODAS LAS PREGUNTAS EN ORDEN YA QUE ESTO PUEDE AFECTAR LOS RESULTADOS
+          DEL TEST.</strong>
+          <br>
+          Cualquier respuesta se considera aceptable si es representativa de tus preferencias profesionales,
+           y es por ello que tienes que responder de manera personal. <br>
+           Si no comprendes el significado de alguna palabra o frase consulta con la persona que te administra el cuestionario para que puedas dar una respuesta segura a ese ítem. <br>
+          <strong> Recuerda: 1 te desagrada, 2 te es indiferente y 3 te agrada.</strong>
+
+        </p>
+
+      </div>
+    <div class="pregunta"
+        *ngFor="let pregunta of preguntas | paginate:{itemsPerPage:36, currentPage:paginaActual}; let preguntaindex = index ">
+        <span for=preguntas> <strong>{{pregunta.orden}}. {{pregunta.descripcion}}</strong></span>
+
+        <div>
+          <br>
+          <mat-button-toggle-group #res="matButtonToggleGroup"
+          *ngFor="let item of respuestas; let indice = index">
+            <mat-button-toggle class="chip"
+              [ngClass]="esRespuestaSeleccionado(item, pregunta.orden) ? 'chip-hito-select' : 'chip'"
+              (click)="agregar(item, pregunta.orden)">
+              {{item}}
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+          <div >
+            <label class="label-left">te desagrada</label><label >te agrada</label>
+          </div>
+        </div>
+
+      </div>
+      
+    <div *ngIf="respuestasSelecionadas.length === 36">
+        <pagination-controls (pageChange)="paginaActual = $event" 
+        previousLabel="Anterior" nextLabel="Siguiente"
+          (click)="iniciar()"></pagination-controls>
+        </div>
+        
+      <div class="respuestas-info">
+        <P><STRONg>RECUERDE QUE DEBE RESPONDER TODAS LAS PREGUNTAS EN ORDEN POR QUE ESTO PUEDE AFECTAR LOS RESULTADOS
+            DEL TEST</STRONg></P>
+      </div>
+      <div class="col text-center">
+         <button *ngIf="respuestasSelecionadas.length === 71" class="btn btns-primary" type="submit" (click)="enviar()">Enviar</button>
+      </div>
+  </div>
+  </section>
+</div>
+
