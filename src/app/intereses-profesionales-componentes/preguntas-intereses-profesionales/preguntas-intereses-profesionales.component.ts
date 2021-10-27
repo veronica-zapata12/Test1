@@ -62,8 +62,8 @@ export class PreguntasInteresesProfesionalesComponent implements OnInit {
       this.respuestasSelecionadas.push(respuestaCopia);
     }
    //para que haga scroll hacia abajo cuando se habiliten las opciones del paginador o el boton de enviar
-   if(this.respuestasSelecionadas.length===35 ||this.respuestasSelecionadas.length===71){
-    window.scrollTo(0, 40000);
+   if(this.respuestasSelecionadas.length===36 ||this.respuestasSelecionadas.length===71){
+    window.scrollTo(0, 400000);
   }
   
 
