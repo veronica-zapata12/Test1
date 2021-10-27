@@ -1,0 +1,286 @@
+[
+    {
+        "orden": 1,
+        "descripcion": "Supervisar obras en construcción "
+    },
+    {
+        "orden": 2,
+        "descripcion": "Construir grandes obras (puentes, por ejemplo) "
+    },
+    {
+        "orden": 3,
+        "descripcion": "Evaluar el estado de conexiones eléctricas "
+    },
+    {
+        "orden": 4,
+        "descripcion": "Diseñar maquetas o modelos (de aviones, por ejemplo) "
+    },
+    {
+        "orden": 5,
+        "descripcion": "Armar motores "
+    },
+    {
+        "orden": 6,
+        "descripcion": "Diseñar vehículos (automóviles, por ejemplo) "
+    },
+    {
+        "orden": 7,
+        "descripcion": "Supervisar las condiciones de trabajo en una empresa "
+    },
+    {
+        "orden": 8,
+        "descripcion": "Aprender sobre comercio exterior (exportaciones de un país, por ejemplo) "
+    },
+    {
+        "orden": 9,
+        "descripcion": "Organizar las relaciones públicas de una empresa "
+    },
+    {
+        "orden": 10,
+        "descripcion": "Analizar planes de desarrollo económico "
+    },
+    {
+        "orden": 11,
+        "descripcion": "Organizar las tareas administrativas de una empresa "
+    },
+    {
+        "orden": 12,
+        "descripcion": "Analizar la situación financiera de una empresa "
+    },
+    {
+        "orden": 13,
+        "descripcion": "Resolver ecuaciones matemáticas "
+    },
+    {
+        "orden": 14,
+        "descripcion": "Aprender geometría "
+    },
+    {
+        "orden": 15,
+        "descripcion": "Aprender matemática "
+    },
+    {
+        "orden": 16,
+        "descripcion": "Resolver problemas matemáticos "
+    },
+    {
+        "orden": 17,
+        "descripcion": "Hacer cálculos numéricos "
+    },
+    {
+        "orden": 18,
+        "descripcion": "Analizar estilos de pintura artística "
+    },
+    {
+        "orden": 19,
+        "descripcion": "Hacer esculturas "
+    },
+    {
+        "orden": 20,
+        "descripcion": "Hacer pintura artística "
+    },
+    {
+        "orden": 21,
+        "descripcion": "Hacer artesanías "
+    },
+    {
+        "orden": 22,
+        "descripcion": "Aprender técnicas de dibujo artístico "
+    },
+    {
+        "orden": 23,
+        "descripcion": "Trabajar con cerámica "
+    },
+    {
+        "orden": 24,
+        "descripcion": "Dar clases a niños "
+    },
+    {
+        "orden": 25,
+        "descripcion": "Investigar las causas de la deserción escolar "
+    },
+    {
+        "orden": 26,
+        "descripcion": "Ayudar a personas con problemas emocionales "
+    },
+    {
+        "orden": 27,
+        "descripcion": "Enseñar a adultos "
+    },
+    {
+        "orden": 28,
+        "descripcion": "Capacitar a personas con discapacidades "
+    },
+    {
+        "orden": 29,
+        "descripcion": "Orientar a personas con problemas laborales "
+    },
+    {
+        "orden": 30,
+        "descripcion": "Tocar un instrumento musical "
+    },
+    {
+        "orden": 31,
+        "descripcion": "Leer música en el pentagrama "
+    },
+    {
+        "orden": 32,
+        "descripcion": "Aprender técnicas de canto "
+    },
+    {
+        "orden": 33,
+        "descripcion": "Dirigir una orquesta "
+    },
+    {
+        "orden": 34,
+        "descripcion": " Componer música "
+    },
+    {
+        "orden": 35,
+        "descripcion": "Realizar arreglos musicales "
+    },
+    {
+        "orden": 36,
+        "descripcion": "Trabajar en un periódico "
+    },
+    {
+        "orden": 37,
+        "descripcion": "Hacer notas para una radio "
+    },
+    {
+        "orden": 38,
+        "descripcion": "Redactar anuncios de publicidad "
+    },
+    {
+        "orden": 39,
+        "descripcion": "Conducir un programa de radio "
+    },
+    {
+        "orden": 40,
+        "descripcion": "Producir programas televisivos "
+    },
+    {
+        "orden": 41,
+        "descripcion": "Escribir crónicas periodísticas "
+    },
+    {
+        "orden": 42,
+        "descripcion": "Leer textos de historia "
+    },
+    {
+        "orden": 43,
+        "descripcion": "Estudiar historia nacional "
+    },
+    {
+        "orden": 44,
+        "descripcion": "Coordinar un taller literario "
+    },
+    {
+        "orden": 45,
+        "descripcion": "Trabajar en un archivo histórico "
+    },
+    {
+        "orden": 46,
+        "descripcion": "Enseñar literatura "
+    },
+    {
+        "orden": 47,
+        "descripcion": "Aprender historia de la antigüedad "
+    },
+    {
+        "orden": 48,
+        "descripcion": "Traducir documentos comerciales a otro idioma "
+    },
+    {
+        "orden": 49,
+        "descripcion": "Enseñar idiomas extranjeros "
+    },
+    {
+        "orden": 50,
+        "descripcion": "Traducir artículos científicos a otro idioma "
+    },
+    {
+        "orden": 51,
+        "descripcion": "Aprender un idioma "
+    },
+    {
+        "orden": 52,
+        "descripcion": "Mantener conversaciones en otro idioma "
+    },
+    {
+        "orden": 53,
+        "descripcion": "Traducir una página de Internet a otro idioma "
+    },
+    {
+        "orden": 54,
+        "descripcion": "Criar diversos tipos de animales "
+    },
+    {
+        "orden": 55,
+        "descripcion": "Trabajar en el campo "
+    },
+    {
+        "orden": 56,
+        "descripcion": "Aprender métodos de cultivo de plantas "
+    },
+    {
+        "orden": 57,
+        "descripcion": "Investigar la contaminación ambiental "
+    },
+    {
+        "orden": 58,
+        "descripcion": "Hacer experimentos con animales "
+    },
+    {
+        "orden": 59,
+        "descripcion": "Investigar sobre especies frutales "
+    },
+    {
+        "orden": 60,
+        "descripcion": "Tomar radiografías "
+    },
+    {
+        "orden": 61,
+        "descripcion": "Utilizar instrumental médico (tensiómetro, por ejemplo) "
+    },
+    {
+        "orden": 62,
+        "descripcion": "Realizar análisis bioquímicos (de sangre, por ejemplo) "
+    },
+    {
+        "orden": 63,
+        "descripcion": "Trabajar en hospitales "
+    },
+    {
+        "orden": 64,
+        "descripcion": "Aprender técnicas de cirugía "
+    },
+    {
+        "orden": 65,
+        "descripcion": "Trabajar en un servicio de enfermería "
+    },
+    {
+        "orden": 66,
+        "descripcion": "Trabajar en un estudio de abogacía "
+    },
+    {
+        "orden": 67,
+        "descripcion": "Estudiar temas jurídicos (Derecho Civil, por ejemplo) "
+    },
+    {
+        "orden": 68,
+        "descripcion": "Analizar juicios penales famosos "
+    },
+    {
+        "orden": 69,
+        "descripcion": "Tomar declaraciones a testigos (de un delito, por ejemplo) "
+    },
+    {
+        "orden": 70,
+        "descripcion": "Defender a una persona en un juicio "
+    },
+    {
+        "orden": 71,
+        "descripcion": "Participar en actividades políticas (en centros estudiantiles, por ejemplo) "
+    }
+]

@@ -30,6 +30,8 @@ import { ReporteProcastinacionComponent } from './procastinacion/reporte-procast
 import { ResultadoPersonalizadoComponent } from './personalidad-componentes/resultado-personalizado/resultado-personalizado.component';
 import { ReportesComponent } from './reportes/reportes.component';
 import { LoginComponent } from './login/login.component';
+import { PreguntasInteresesProfesionalesComponent } from './intereses-profesionales-componentes/preguntas-intereses-profesionales/preguntas-intereses-profesionales.component';
+import { ReporteInteresesProfesionalesComponent } from './intereses-profesionales-componentes/reporte-intereses-profesionales/reporte-intereses-profesionales.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { LoginComponent } from './login/login.component';
     ReporteProcastinacionComponent,
     ResultadoPersonalizadoComponent,
     ReportesComponent,
-    LoginComponent
+    LoginComponent,
+    PreguntasInteresesProfesionalesComponent,
+    ReporteInteresesProfesionalesComponent
   ],
   imports: [
     BrowserModule,

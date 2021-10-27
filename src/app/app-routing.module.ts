@@ -14,6 +14,7 @@ import { ReporteProcastinacionComponent } from './procastinacion/reporte-procast
 import { ResultadoPersonalizadoComponent } from './personalidad-componentes/resultado-personalizado/resultado-personalizado.component';
 import { LoginComponent } from './login/login.component';
 import { ReportesComponent } from './reportes/reportes.component';
+import { PreguntasInteresesProfesionalesComponent } from './intereses-profesionales-componentes/preguntas-intereses-profesionales/preguntas-intereses-profesionales.component';
 
 
 
@@ -48,6 +49,11 @@ const routes: Routes = [
   {
     path:'cuestionario-procastinacion',
     component:PreguntasProcastinacionComponent
+
+  },
+  {
+    path:'cuestionario-intereses-profesionales',
+    component:PreguntasInteresesProfesionalesComponent
 
   },
   {

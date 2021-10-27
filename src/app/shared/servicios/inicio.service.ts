@@ -17,6 +17,8 @@ export class InicioService {
         return this.habilitar=test;
       }else if(test =="procastinacion"){
         return this.habilitar=test;
+      }else if(test =="intereses"){
+        return this.habilitar=test;
       }
     }
     public habilitarTest(){

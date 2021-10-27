@@ -18,6 +18,7 @@ const acciones = [
     {accion: 'programas', run: inicializarProgramas},
     { accion: 'preguntas-motivacion-aprendizaje', run: inicializarPreguntasMotivacion },
     { accion: 'preguntas-procastinacion', run: inicializarPreguntasProcastinacion },
+    { accion: 'preguntas-intereses-profesionales', run: inicializarPreguntasInteresesProfesionales },
 
     { accion: 'all', run: all }
 ];
@@ -92,6 +93,15 @@ function inicializarPreguntasProcastinacion() {
 
     preguntas.forEach(preguntas => {
         adicionar("preguntas-procastinacion", preguntas);
+    });
+    return;
+}
+function inicializarPreguntasInteresesProfesionales() {
+    let interesesData = fs.readFileSync('json/preguntasInteresesProfesionales.json');
+    let intereses = JSON.parse(interesesData);
+
+    intereses.forEach(intereses => {
+        adicionar("preguntas-intereses-profesionales", intereses);
     });
     return;
 }

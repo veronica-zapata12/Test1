@@ -64,6 +64,10 @@ export class DatosPersonalComponent implements OnInit {
       this.procastinacionService.agregarDatosPersonales(this.form.value);
       this.router.navigate(['/cuestionario-procastinacion']);
     }
+    if (this.habilitarTest=='intereses'){
+      this.procastinacionService.agregarDatosPersonales(this.form.value);
+      this.router.navigate(['/cuestionario-intereses-profesionales']);
+    }
     
   }else {
     this.form.markAllAsTouched();
