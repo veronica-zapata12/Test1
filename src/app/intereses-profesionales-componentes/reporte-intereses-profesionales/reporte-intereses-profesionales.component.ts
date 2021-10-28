@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RespuestasInteresesProfesionales } from 'src/app/shared/modelos/respuestasInteresesProfesionales';
 import { ExcelService } from 'src/app/shared/servicios/excel.service';
+import { OrdenamientoService } from 'src/app/shared/servicios/ordenamiento.service';
 import { ReporteService } from 'src/app/shared/servicios/reporte.service';
 
 @Component({
@@ -18,7 +19,7 @@ export class ReporteInteresesProfesionalesComponent implements OnInit {
     public respuestasCopiar = [];
     resultado:any
   
-    constructor(private reporteService: ReporteService,
+    constructor(private reporteService: ReporteService,private ordenamientoService: OrdenamientoService,
       private excelervice: ExcelService) { }
       ngOnDestroy() {
         this.resultado.unsubscribe();
@@ -196,6 +197,7 @@ export class ReporteInteresesProfesionalesComponent implements OnInit {
         this.copia.push(copia1)
   
       });
+      this.copia.sort(this.ordenamientoService.ascendentemente('fecha'));
       
       this.excelervice.exportAsExcelFile(this.copia, 'respuestas test intereses profesionales');
       this.copia = [];

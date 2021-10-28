@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RespuestasProcastincacion } from 'src/app/shared/modelos/respuestasProcastinacion';
 import { ExcelService } from 'src/app/shared/servicios/excel.service';
+import { OrdenamientoService } from 'src/app/shared/servicios/ordenamiento.service';
 import { ReporteService } from 'src/app/shared/servicios/reporte.service';
 
 @Component({
@@ -16,8 +17,9 @@ export class ReporteProcastinacionComponent implements OnInit,OnDestroy {
  copia = [];
  public respuestasCopiar = [];
 resultado:any
+prueba=[];
 
- constructor(private reporteService: ReporteService,
+ constructor(private reporteService: ReporteService,private ordenamientoService: OrdenamientoService,
    private excelervice: ExcelService) { }
    ngOnDestroy() {
     this.resultado.unsubscribe();
@@ -111,7 +113,10 @@ resultado:any
    
   });
   
+   this.copia.sort(this.ordenamientoService.ascendentemente('fecha'));
+
   this.excelervice.exportAsExcelFile(this.copia, 'respuestas Test Procastinacion');
+  
   this.copia=[];
   
 }
